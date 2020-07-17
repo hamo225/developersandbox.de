@@ -1,0 +1,54 @@
+/* these become project wide definitions */
+/* include the pseudo selectors so they are also included in the global reset */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* here we set the boxsizing element in the body and then applied the inherit to the universal selector */
+}
+
+html {
+  /* declaring the root font size in html. But should not be in px as the user will not be able to change the default 
+  font size so move to a percentage*/
+
+  // the media queries need to be orders from highest to lowest
+
+  font-size: 45.5%; //1 rem is 10px, 10px/16px = 62.5%
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1 rem to look like 12px
+  }
+
+  @include respond(tab-land) {
+    //if want 1 rem to equal 8 which is 50% then change here and everywhere will be 8 now equal to one rem
+    font-size: 50%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 43%; //1 rem to be 7px
+  }
+
+  @include respond(phone) {
+    font-size: 37.5%;
+  }
+
+
+}
+
+
+
+
+/* put the font family in body element so that use inhertiance across all the children elements */
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+
+}

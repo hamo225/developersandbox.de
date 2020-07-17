@@ -1,0 +1,107 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin center-horizontal-vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Media Query Manager
+0 - 600px: Phone
+600 - 900px:    Tablet Portrait
+900 - 1200px:   Tablet landscape
+600 - 900px:    Tablet Portrait
+(1200 - 1800): This is normal styles desktop first approach
+1800px + :      Big Desktop
+
+$breakpoints choices
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
+
+// 1 em is 16px
+
+@mixin respond ($breakpoint) {
+
+  @if $breakpoint==small-phone {
+
+    // 400px
+    @media (max-width: 25em) {
+      @content
+    }
+
+    ;
+
+  }
+
+  @if $breakpoint==mid-phone {
+
+    // 500px
+    @media (max-width: 31.25em) {
+      @content
+    }
+
+    ;
+
+  }
+
+
+  @if $breakpoint==phone {
+
+    // 600px
+    @media (max-width: 37.5em) {
+      @content
+    }
+
+    ;
+
+  }
+
+  @if $breakpoint==tab-port {
+
+    // 900px
+    @media (max-width: 56.25em) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==tab-land {
+
+    // 1200px
+    @media (max-width: 75em) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==big-desktop {
+
+    // 1800px
+    @media (min-width: 112.5em) {
+      @content
+    }
+
+    ;
+  }
+}
+
+
+/* General order of Media Queries
+1- Base and Typography 
+2- General Layout (header footer nav) and Grid
+3- Page Layout (more specific pages)
+4- Components
+
+*/

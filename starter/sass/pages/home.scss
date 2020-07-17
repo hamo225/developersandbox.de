@@ -1,0 +1,61 @@
+.section-about {
+  background-color: $color-grey-light;
+  padding: 25rem 10rem;
+  margin-top: -25vh;
+}
+
+.section-features {
+  margin-top: -13rem;
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom,
+      rgba($primary-color-light, 0.8),
+      rgba($primary-color-dark, 0.8)),
+    url(/Natours/starter/img/nat-4.jpg);
+  background-size: cover;
+
+  transform: skewY(-7deg);
+
+  &>* {
+    transform: skewY(7deg);
+
+  }
+}
+
+.section-projects {
+  background-color: $color-grey-light;
+  padding: 25rem 0 15rem 0;
+  margin-top: -12vh;
+}
+
+.section-stories {
+  padding: 10rem 0;
+
+  position: relative;
+}
+
+.section-contact {
+  padding: 10rem 0;
+  background-image: linear-gradient(to right bottom, $primary-color-light, $primary-color-dark);
+
+}
+
+.contact {
+
+  background-image: linear-gradient(105deg,
+      rgba($color-white, .9) 0%,
+      rgba($color-white, .9) 50%,
+      transparent 50%),
+    url(/Natours/starter/img/nat-10.jpg);
+  background-size: cover;
+  // height is temporary
+  // height: 50rem;
+  border-radius: $default-border-radius;
+  box-shadow: $default-box-shadow-darker;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
+
+
+}

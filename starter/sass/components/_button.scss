@@ -1,0 +1,108 @@
+.button {
+
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 10rem;
+    /* makes all the transitions under this class link all have a smooth transition of 0.2 s  */
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+
+    // changing the the button for the button element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    /* this pops the element up 3px */
+    transform: translateY(-0.5rem);
+    box-shadow: 0 10px 20px rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.5) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    /* this pops the element up 2px */
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--White {
+    color: $color-grey-dark;
+    background-color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--Blue {
+    color: $color-white;
+    background-color: $primary-color;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    backface-visibility: hidden;
+  }
+
+  &--Animated {
+    animation: moveInBottom 0.5s ease-out 0.75;
+    animation-fill-mode: backwards;
+  }
+}
+
+/* Pseudo classes and elements */
+/* styling elements under specialconditions */
+
+.button-small {
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $primary-color;
+    padding: 3px;
+    display: inline-block;
+    font-size: $default-font-size;
+    border-bottom: 1px solid $primary-color;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $primary-color;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    transform: translateY(0);
+  }
+}
+
+.button-small-section {
+  & a:hover {
+    color: $color-white;
+  }
+}

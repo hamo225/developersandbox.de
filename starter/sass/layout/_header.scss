@@ -1,0 +1,51 @@
+.header {
+  /* 95% of the viewport height */
+  height: 95vh;
+  /* use background image to add gradient property */
+  background-image: linear-gradient(to right bottom,
+      rgba($primary-color-light, 0.8),
+      rgba($primary-color-dark, 0.8)),
+    url(/Natours/starter/img/hero.jpg);
+  /* will always fit the element in whatever the size of the viewport is */
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  /* clip-path works its way around from top left to each corner of the image */
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    height: 60vh;
+  }
+
+  @include respond(mid-phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+    height: 50vh;
+  }
+
+  @include respond(small-phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+    height: 40vh;
+  }
+
+  &__logoBox {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    /* set the height and the browser will take care of the width */
+    height: 3.5rem;
+  }
+
+  &__textBox {
+    position: absolute;
+    width: fit-content;
+    top: 40%;
+    left: 50%;
+    /* used to center the div in the middle of the page */
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
