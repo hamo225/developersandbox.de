@@ -1,7 +1,7 @@
 {
   "name": "starter",
   "version": "1.0.0",
-  "description": "Landing Page for Natours",
+  "description": "TareK Hamaoui Portfolio Site",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"

@@ -10,7 +10,7 @@
   background-image: linear-gradient(to right bottom,
       rgba($primary-color-light, 0.8),
       rgba($primary-color-dark, 0.8)),
-    url(/Natours/starter/img/nat-4.jpg);
+    url(starter/img/nat-4.jpg);
   background-size: cover;
 
   transform: skewY(-7deg);
@@ -45,7 +45,7 @@
       rgba($color-white, .9) 0%,
       rgba($color-white, .9) 50%,
       transparent 50%),
-    url(/Natours/starter/img/nat-10.jpg);
+    url(/starter/img/nat-10.jpg);
   background-size: cover;
   // height is temporary
   // height: 50rem;
