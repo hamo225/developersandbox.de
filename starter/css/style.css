@@ -772,7 +772,7 @@ body {
   @media (max-width: 56.25em) {
     .navigation__button {
       top: 3rem;
-      right: 3rem; } }
+      right: 2rem; } }
   @media (max-width: 31.25em) {
     .navigation__button {
       height: 1;
