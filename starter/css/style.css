@@ -724,6 +724,9 @@ body {
   .footer__logo-box {
     margin-bottom: 8rem;
     text-align: center; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 3rem; } }
   .footer__logo {
     height: auto; }
   .footer__navigation {
