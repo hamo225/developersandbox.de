@@ -26,7 +26,7 @@
             height: 1;
             width: 1;
             top: 2.5rem;
-            right: 6rem;
+            right: 4rem;
         }
 
         @include respond(small-phone) {
@@ -52,14 +52,14 @@
 
         @include respond(tab-port) {
             top: 3.5rem;
-            right: 3.5rem;
+            right: 2.5rem;
         }
 
         @include respond(mid-phone) {
             height: 5;
             width: 5;
             top: 3rem;
-            right: 6rem;
+            right: 4rem;
         }
 
         @include respond(small-phone) {
