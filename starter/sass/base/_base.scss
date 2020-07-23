@@ -24,15 +24,15 @@ html {
 
   @include respond(tab-land) {
     //if want 1 rem to equal 8 which is 50% then change here and everywhere will be 8 now equal to one rem
-    font-size: 50%;
+    font-size: 60%;
   }
 
   @include respond(tab-port) {
-    font-size: 43%; //1 rem to be 7px
+    font-size: 53%; //1 rem to be 7px
   }
 
   @include respond(phone) {
-    font-size: 37.5%;
+    font-size: 43.5%;
   }
 
 

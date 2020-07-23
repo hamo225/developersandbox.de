@@ -1,26 +1,16 @@
 .row {
   max-width: $grid-width;
-  // background-color: #eeeeee;
   margin: 0 auto;
-  margin-bottom: $gutter-vertical;
+  // margin-bottom: $gutter-vertical-small;
 
   &:not(:last-child) {
-    margin-bottom: $gutter-vertical;
+    margin-bottom: $gutter-vertical-small;
 
-    @include respond(tab-port) {
-      margin-bottom: $gutter-vertical-small;
-
-    }
   }
 
   @include respond(tab-port) {
     max-width: 90rem;
-    padding: 0 10rem;
-  }
-
-  @include respond(phone) {
-    max-width: 90rem;
-    padding: 0 5rem;
+    padding: 0 3rem;
   }
 
   @include clearfix;

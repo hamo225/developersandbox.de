@@ -27,22 +27,17 @@ body {
     /* animation-timing-function: ease-out; */
 
     @include respond(tab-port) {
-      font-size: 5.5rem;
+      font-size: 4rem;
     }
 
     @include respond(phone) {
       letter-spacing: 1rem;
-      font-size: 5rem;
-    }
-
-    @include respond(mid-phone) {
-      letter-spacing: 1rem;
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     @include respond(small-phone) {
       letter-spacing: 1rem;
-      font-size: 3rem;
+      font-size: 2.7rem;
     }
   }
 
@@ -59,12 +54,12 @@ body {
     animation: moveInRight 3s;
 
     @include respond(tab-port) {
-      font-size: 2.5rem;
+      font-size: 2rem;
 
     }
 
     @include respond(phone) {
-      font-size: 2rem;
+      font-size: 1.5rem;
 
     }
 
@@ -75,7 +70,7 @@ body {
 
     @include respond(small-phone) {
       letter-spacing: 1rem;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
 }
@@ -111,12 +106,12 @@ body {
 
   @include respond(mid-phone) {
     letter-spacing: 1rem;
-    font-size: 2.5rem;
+    font-size: 3.1rem;
   }
 
   @include respond(small-phone) {
     letter-spacing: 1rem;
-    font-size: 0.1rem;
+    font-size: 3.1rem;
   }
 }
 

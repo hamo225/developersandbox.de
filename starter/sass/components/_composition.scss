@@ -11,19 +11,43 @@
     transition: all 0.2s;
     outline-offset: 1rem;
 
+    @include respond(tab-port) {
+      float: left;
+      position: relative;
+      width: 33.3333%;
+      box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+    }
+
     &--p1 {
       margin-top: -2rem;
       margin-left: 0%;
+
+      @include respond(tab-port) {
+        margin-top: -14rem;
+        margin-left: 5%;
+
+      }
     }
 
     &--p2 {
       margin-top: 3rem;
       margin-left: 15%;
+
+      @include respond(tab-port) {
+        margin-top: -8rem;
+        margin-left: -4%;
+        z-index: 20000;
+      }
     }
 
     &--p3 {
       margin-top: 13rem;
       margin-left: 7%;
+
+      @include respond(tab-port) {
+        margin-top: -25rem;
+        margin-left: 63%;
+      }
     }
 
     &:hover {
@@ -33,6 +57,7 @@
       z-index: 20;
     }
   }
+
   //when u hover over composition, and then select the composition photo that is not hovered over
   &:hover &__photo:not(:hover) {
     transform: scale(0.95);
