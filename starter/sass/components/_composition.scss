@@ -14,7 +14,7 @@
     @include respond(tab-port) {
       float: left;
       position: relative;
-      width: 33.3333%;
+      width: 33.333%;
       box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
     }
 
@@ -23,9 +23,8 @@
       margin-left: 0%;
 
       @include respond(tab-port) {
-        margin-top: -14rem;
-        margin-left: 5%;
-
+        margin-top: -5rem;
+        transform: scale(1.2);
       }
     }
 
@@ -34,9 +33,11 @@
       margin-left: 15%;
 
       @include respond(tab-port) {
-        margin-top: -8rem;
-        margin-left: -4%;
-        z-index: 20000;
+        margin-top: -10rem;
+        margin-left: 0;
+        transform: scale(1.4);
+        z-index: 2000;
+
       }
     }
 
@@ -45,8 +46,10 @@
       margin-left: 7%;
 
       @include respond(tab-port) {
-        margin-top: -25rem;
-        margin-left: 63%;
+        margin-top: -5rem;
+        margin-left: 0rem;
+        transform: scale(1.2);
+
       }
     }
 

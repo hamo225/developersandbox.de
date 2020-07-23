@@ -12,7 +12,6 @@
     padding: 26rem 5rem;
   }
 
-
 }
 
 .section-features {
@@ -32,7 +31,8 @@
   }
 
   @include respond(tab-port) {
-    padding: 12rem 5rem;
+    padding: 8rem 5rem;
+    margin-top: -11rem;
   }
 }
 
@@ -43,7 +43,7 @@
 
 
   @include respond(tab-port) {
-    padding: 22rem 5rem 10rem 5rem;
+    padding: 20rem 5rem 10rem 5rem;
 
   }
 
@@ -76,16 +76,30 @@
       rgba($color-white, .9) 50%,
       transparent 50%),
     url(/img/nat-10.jpg);
-  background-size: cover;
-  // height is temporary
-  // height: 50rem;
+  background-size: 100%;
   border-radius: $default-border-radius;
   box-shadow: $default-box-shadow-darker;
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(to right rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%),
+      url(/img/nat-10.jpg);
+    background-size: cover;
+
+
+
+  }
+
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
+
 
 
 }

@@ -6,7 +6,10 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: all 0.2s;
-  height: 40rem;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
 
   &__icon {
     font-size: 5rem;
@@ -17,6 +20,10 @@
     color: transparent;
     transition: all 0.3s;
     letter-spacing: 2px;
+
+    @include respond(tab-port) {
+      margin: 0rems;
+    }
   }
 
   &:hover {
