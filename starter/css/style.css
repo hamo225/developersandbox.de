@@ -168,7 +168,7 @@ body {
   @media (max-width: 25em) {
     .headingSecondary {
       letter-spacing: 1rem;
-      font-size: 3.1rem; } }
+      font-size: 2.4rem; } }
 
 .headingTertiary {
   font-size: 1.6rem;
@@ -593,6 +593,22 @@ body {
     border-bottom: 3px solid red; }
   .form__input::-webkit-input-placeholder {
     color: #999; }
+  @media (max-width: 25em) {
+    .form__input {
+      width: 100%; } }
+
+.form__textarea {
+  border: none;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  color: inherit;
+  border-radius: 2px; }
+  @media (max-width: 25em) {
+    .form__textarea {
+      width: 100%; } }
 
 .form__label {
   font-size: 1.2rem;
@@ -611,6 +627,10 @@ body {
   display: inline-block;
   padding-left: 9rem;
   padding-top: 1rem; }
+  @media (max-width: 31.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 1rem; } }
 
 .form__radio-input {
   display: none; }
@@ -1030,14 +1050,16 @@ body {
       padding: 8rem 5rem; } }
 
 .contact {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(/img/nat-10.jpg);
-  background-size: 100%;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 50%), url(/img/nat-10.jpg);
+  background-size: cover;
   border-radius: 15px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35); }
   @media (max-width: 56.25em) {
     .contact {
-      background-image: linear-gradient(to right rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(/img/nat-10.jpg);
-      background-size: cover; } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(/img/nat-10.jpg);
+      background-size: cover;
+      border-radius: 15px;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35); } }
   .contact__form {
     width: 50%;
     padding: 6rem; }
