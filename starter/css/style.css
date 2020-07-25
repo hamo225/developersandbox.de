@@ -235,6 +235,10 @@ body {
   font-size: 1.6rem;
   border: none;
   cursor: pointer; }
+  @media (max-width: 31.25em) {
+    .button, .button:link, .button:visited {
+      padding: 1rem 1.5rem;
+      font-size: 1.2rem; } }
 
 .button:hover {
   /* this pops the element up 3px */
@@ -352,8 +356,8 @@ body {
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
-  padding: 2.5rem;
+  font-size: 1.6rem;
+  padding: 3rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -365,6 +369,7 @@ body {
     font-size: 4rem;
     background-image: linear-gradient(to right, #2fb5dd, #1d68be);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     transition: all 0.3s;
     letter-spacing: 2px; }
@@ -386,7 +391,7 @@ body {
   position: relative;
   height: 50rem; }
   .card__side {
-    height: 50rem;
+    height: 57rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
