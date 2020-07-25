@@ -115,7 +115,7 @@ body {
     @media (max-width: 37.5em) {
       .headingPrimary__Main {
         letter-spacing: 1rem;
-        font-size: 3rem; } }
+        font-size: 3.5rem; } }
     @media (max-width: 25em) {
       .headingPrimary__Main {
         letter-spacing: 1rem;
@@ -131,14 +131,15 @@ body {
         font-size: 2rem; } }
     @media (max-width: 37.5em) {
       .headingPrimary__Sub {
-        font-size: 1.5rem; } }
+        font-size: 1.5rem;
+        letter-spacing: 1rem; } }
     @media (max-width: 31.25em) {
       .headingPrimary__Sub {
-        letter-spacing: 1rem;
+        letter-spacing: 0.5rem;
         font-size: 1.5rem; } }
     @media (max-width: 25em) {
       .headingPrimary__Sub {
-        letter-spacing: 1rem;
+        letter-spacing: .5rem;
         font-size: 1.2rem; } }
 
 .headingSecondary {
