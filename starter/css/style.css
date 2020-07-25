@@ -361,12 +361,16 @@ body {
     .feature-box {
       padding: 2rem; } }
   .feature-box__icon {
-    font-size: 5rem;
+    font-size: 4rem;
     background-image: linear-gradient(to right, #2fb5dd, #1d68be);
     -webkit-background-clip: text;
     color: transparent;
     transition: all 0.3s;
     letter-spacing: 2px; }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin: 0rems;
+        font-size: 3.5rem; } }
     @media (max-width: 56.25em) {
       .feature-box__icon {
         margin: 0rems; } }
@@ -524,6 +528,11 @@ body {
     @media (max-width: 37.5em) {
       .stories__shape {
         transform: translateX(-3rem) skewX(0); } }
+    @media (max-width: 25em) {
+      .stories__shape {
+        width: 10rem;
+        height: 10rem;
+        transform: translateX(-1rem) skewX(0); } }
   .stories__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.5);
@@ -548,6 +557,9 @@ body {
     backface-visibility: hidden;
     transition: all 0.5s;
     backface-visibility: hidden; }
+    @media (max-width: 25em) {
+      .stories__caption {
+        font-size: 1.5rem; } }
   .stories:hover .stories__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
@@ -695,7 +707,6 @@ body {
   .popup__content {
     width: 75%;
     background-color: #fff;
-    margin: 0 auto;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50%;
@@ -704,17 +715,38 @@ body {
     display: table;
     overflow: hidden;
     border-radius: 2rem; }
+    @media (max-width: 75em) {
+      .popup__content {
+        display: block; } }
+    @media (max-width: 25em) {
+      .popup__content {
+        width: 90%; } }
   .popup__left {
     width: 33.33%;
     display: table-cell; }
+    @media (max-width: 75em) {
+      .popup__left {
+        width: 100%;
+        display: block; } }
   .popup__right {
     width: 66.6667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 75em) {
+      .popup__right {
+        width: 100%;
+        display: block;
+        padding: 2rem 3rem; } }
+    @media (max-width: 31.25em) {
+      .popup__right .headingSecondary {
+        letter-spacing: 1px; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 75em) {
+      .popup__img {
+        display: none; } }
   .popup__text {
     margin-bottom: 4rem;
     column-count: 2;
@@ -728,6 +760,9 @@ body {
     -webkit-hyphens: auto;
     hyphens: auto;
     line-height: 1.8; }
+    @media (max-width: 75em) {
+      .popup__text {
+        margin-top: 3rem; } }
 
 .header {
   /* 95% of the viewport height */
