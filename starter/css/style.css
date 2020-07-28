@@ -147,7 +147,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #2fb5dd, #1d68be);
+  background-image: linear-gradient(to right, #494949, #494949);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -198,6 +198,9 @@ body {
 
 .u-center-text {
   text-align: center; }
+
+.u-margin-bottom-bigger {
+  margin-bottom: 12rem; }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
@@ -261,7 +264,7 @@ body {
 
 .button--Blue {
   color: #fff;
-  background-color: #5ab4f0; }
+  background-color: #494949; }
   .button--Blue::after {
     background-color: #fff; }
 
@@ -286,15 +289,15 @@ body {
 /* styling elements under specialconditions */
 .button-small:link, .button-small:visited {
   text-decoration: none;
-  color: #5ab4f0;
+  color: #494949;
   padding: 3px;
   display: inline-block;
   font-size: 1.6rem;
-  border-bottom: 1px solid #5ab4f0;
+  border-bottom: 1px solid #494949;
   transition: all 0.2s; }
 
 .button-small:hover {
-  background-color: #5ab4f0;
+  background-color: #494949;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
@@ -347,7 +350,7 @@ body {
           margin-left: 0rem;
           transform: scale(1.2); } }
     .composition__photo:hover {
-      outline: 1.5rem solid #5ab4f0;
+      outline: 1.5rem solid #494949;
       transform: scale(1.1) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.7);
       z-index: 20; }
@@ -356,8 +359,8 @@ body {
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.6rem;
-  padding: 3rem;
+  font-size: 5rem;
+  padding: 2rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -366,8 +369,8 @@ body {
     .feature-box {
       padding: 2rem; } }
   .feature-box__icon {
-    font-size: 4rem;
-    background-image: linear-gradient(to right, #2fb5dd, #1d68be);
+    font-size: 5.5rem;
+    background-image: linear-gradient(to right, #2998ff, #5643fa);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -407,7 +410,7 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back--1 {
-        background-image: linear-gradient(to right bottom, #d1cf35, #f3de21); }
+        background-image: linear-gradient(to right bottom, #d3d3bc, #acb2b4); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -421,11 +424,11 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right, #d1cf35, #f3de21), url(/img/nat-5.jpg); }
+      background-image: linear-gradient(to right, #d3d3bc, #acb2b4), url(../img/nat-5.jpg); }
     .card__picture--2 {
-      background-image: url(img/nat-5.jpg); }
+      background-image: url(../img/nat-5.jpg); }
     .card__picture--3 {
-      background-image: url(/img/nat-5.jpg); }
+      background-image: url(../img/nat-5.jpg); }
   .card__heading {
     font-size: 3rem;
     font-weight: 300;
@@ -442,7 +445,7 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(209, 207, 53, 0.85), rgba(243, 222, 33, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(211, 211, 188, 0.85), rgba(172, 178, 180, 0.85)); }
   .card__details {
     padding: 0 3rem; }
     .card__details ul {
@@ -523,8 +526,8 @@ body {
     .stories {
       transform: skewX(0); } }
   .stories__shape {
-    width: 15rem;
-    height: 15rem;
+    width: 12.5rem;
+    height: 12.5rem;
     float: left;
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
@@ -606,7 +609,7 @@ body {
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #5ab4f0; }
+    border-bottom: 3px solid #494949; }
   .form__input:focus:invalid {
     border-bottom: 3px solid red; }
   .form__input::-webkit-input-placeholder {
@@ -662,7 +665,7 @@ body {
 .form__radio-button {
   height: 3rem;
   width: 3rem;
-  border: 5px solid #5ab4f0;
+  border: 5px solid #494949;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -678,7 +681,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #5ab4f0;
+    background-color: #494949;
     opacity: 0;
     transition: opacity .2s; }
 
@@ -696,6 +699,11 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s; }
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.8); } }
   .popup:target {
     visibility: visible;
     opacity: 1; }
@@ -709,7 +717,7 @@ body {
     display: inline-block;
     transition: all 0.2s; }
   .popup__close:hover {
-    color: #5ab4f0; }
+    color: #494949; }
   .popup__content {
     width: 75%;
     background-color: #fff;
@@ -774,7 +782,7 @@ body {
   /* 95% of the viewport height */
   height: 95vh;
   /* use background image to add gradient property */
-  background-image: linear-gradient(to right bottom, rgba(47, 181, 221, 0.8), rgba(29, 104, 190, 0.8)), url(/img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(73, 73, 73, 0.8), rgba(73, 73, 73, 0.8)), url(../img/hero.jpg);
   /* will always fit the element in whatever the size of the viewport is */
   background-size: cover;
   background-position: top;
@@ -884,7 +892,7 @@ body {
     display: inline-block;
     transition: all 0.2s; }
   .footer__link:hover, .footer__link:active {
-    color: #5ab4f0;
+    color: #494949;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
   .footer__copyright {
@@ -940,7 +948,7 @@ body {
   position: fixed;
   top: 6rem;
   right: 6.5rem;
-  background-image: radial-gradient(#2fb5dd, #1d68be);
+  background-image: radial-gradient(#494949, #494949);
   z-index: 1000;
   transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1); }
   @media (max-width: 56.25em) {
@@ -996,7 +1004,7 @@ body {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 99%;
-  color: #5ab4f0;
+  color: #494949;
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -1058,7 +1066,7 @@ body {
 .section-features {
   margin-top: -13rem;
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(47, 181, 221, 0.8), rgba(29, 104, 190, 0.8)), url(starter/img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(73, 73, 73, 0.8), rgba(73, 73, 73, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg); }
   .section-features > * {
@@ -1085,19 +1093,19 @@ body {
 
 .section-contact {
   padding: 10rem 0;
-  background-image: linear-gradient(to right bottom, #2fb5dd, #1d68be); }
+  background-image: linear-gradient(to right bottom, #494949, #494949); }
   @media (max-width: 56.25em) {
     .section-contact {
       padding: 8rem 5rem; } }
 
 .contact {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 50%), url(/img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 50%), url(../img/nat-10.jpg);
   background-size: cover;
   border-radius: 15px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35); }
   @media (max-width: 56.25em) {
     .contact {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(/img/nat-10.jpg);
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
       background-size: cover;
       border-radius: 15px;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35); } }

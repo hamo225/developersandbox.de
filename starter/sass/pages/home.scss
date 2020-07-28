@@ -20,7 +20,7 @@
   background-image: linear-gradient(to right bottom,
       rgba($primary-color-light, 0.8),
       rgba($primary-color-dark, 0.8)),
-    url(starter/img/nat-4.jpg);
+    url(../img/nat-4.jpg);
   background-size: cover;
 
   transform: skewY(-7deg);
@@ -75,7 +75,7 @@
       rgba($color-white, .9) 0%,
       rgba($color-white, .9) 60%,
       transparent 50%),
-    url(/img/nat-10.jpg);
+    url(../img/nat-10.jpg);
   background-size: cover;
   border-radius: $default-border-radius;
   box-shadow: $default-box-shadow-darker;
@@ -84,7 +84,7 @@
     background-image: linear-gradient(to right,
         rgba($color-white, .9) 0%,
         rgba($color-white, .9) 100%),
-      url(/img/nat-10.jpg);
+      url(../img/nat-10.jpg);
     background-size: cover;
     border-radius: $default-border-radius;
     box-shadow: $default-box-shadow-darker;
