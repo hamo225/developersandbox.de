@@ -4,7 +4,9 @@
   "description": "TareK Hamaoui Portfolio Site",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css -w"
+
   },
   "author": "Tarek Hamaoui",
   "license": "ISC",
