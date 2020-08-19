@@ -35,7 +35,7 @@ $breakpoints choices
   @if $breakpoint==small-phone {
 
     // 400px
-    @media (max-width: 25em) {
+    @media only screen and(max-width: 25em) {
       @content
     }
 
@@ -46,7 +46,7 @@ $breakpoints choices
   @if $breakpoint==mid-phone {
 
     // 500px
-    @media (max-width: 31.25em) {
+    @media only screen and(max-width: 31.25em) {
       @content
     }
 
@@ -58,7 +58,7 @@ $breakpoints choices
   @if $breakpoint==phone {
 
     // 600px
-    @media (max-width: 37.5em) {
+    @media only screen and(max-width: 37.5em) {
       @content
     }
 
@@ -69,7 +69,7 @@ $breakpoints choices
   @if $breakpoint==tab-port {
 
     // 900px
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       @content
     }
 
@@ -79,7 +79,7 @@ $breakpoints choices
   @if $breakpoint==tab-land {
 
     // 1200px
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       @content
     }
 
@@ -89,7 +89,7 @@ $breakpoints choices
   @if $breakpoint==big-desktop {
 
     // 1800px
-    @media (min-width: 112.5em) {
+    @media only screen and(min-width: 112.5em) {
       @content
     }
 
