@@ -13,3 +13,5 @@ Will showcase:
 
 5- list twitter, dev.to, github profiles/accounts
 
+6- must add learnings section --- sass, BEM, development environment, build processes
+
