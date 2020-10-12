@@ -20,6 +20,4 @@ Will showcase:
 #How to write a github Readme:
 1. Fork and download the app and open in terminal
 2. Install dependencies using "npm install" command in terminal
-3.
-4.
-5.
+
