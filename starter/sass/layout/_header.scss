@@ -4,8 +4,7 @@
   /* use background image to add gradient property */
   background-image: linear-gradient(to right bottom,
       rgba($primary-color-light, 0.8),
-      rgba($primary-color-dark, 0.8)),
-    url(../img/hero.jpg);
+      rgba($primary-color-dark, 0.8));
   /* will always fit the element in whatever the size of the viewport is */
   background-size: cover;
   background-position: top;
