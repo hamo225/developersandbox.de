@@ -1,9 +1,7 @@
 .feature-box {
-  background-color: rgba($color-white, 0.8);
-  font-size: 5rem;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 3px;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 5rem;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: all 0.2s;
 
@@ -11,31 +9,13 @@
     padding: 2rem;
   }
 
-  &__icon {
-    font-size: 5.5rem;
-    background-image: linear-gradient(to right,
-        $tertiary-color-light,
-        $tertiary-color-dark);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    transition: all 0.3s;
-    letter-spacing: 2px;
-
-
-    @include respond(tab-port) {
-      margin: 0rems;
-      font-size: 3.5rem;
-    }
-
-    @include respond(tab-port) {
-      margin: 0rems;
-    }
-  }
-
   &:hover {
     transform: scale(1.1) translateY(-0.5rem);
     box-shadow: 0 2.5rem 4rem rgba($color-black, 0.7);
     z-index: 20;
+  }
+
+  & img {
+    width: 100%;
   }
 }

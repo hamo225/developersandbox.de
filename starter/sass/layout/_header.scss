@@ -1,16 +1,18 @@
 .header {
   /* 95% of the viewport height */
-  height: 95vh;
+  height: 80vh;
   /* use background image to add gradient property */
-  background-image: linear-gradient(to right bottom,
-      rgba($primary-color-light, 0.8),
-      rgba($primary-color-dark, 0.8));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(rgb(96, 192, 209), 0.8),
+    rgba(rgb(30, 146, 167), 0.8)
+  );
   /* will always fit the element in whatever the size of the viewport is */
   background-size: cover;
   background-position: top;
   position: relative;
   /* clip-path works its way around from top left to each corner of the image */
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 80vh);
 
   @include respond(tab-port) {
     clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
@@ -31,17 +33,6 @@
   //   clip-path: polygon(0 0, 100% 0, 100% 20vh, 0 100%);
   //   height: 30vh;
   // }
-
-  &__logoBox {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-  }
-
-  &__logo {
-    /* set the height and the browser will take care of the width */
-    height: 3.5rem;
-  }
 
   &__textBox {
     position: absolute;

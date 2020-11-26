@@ -5,9 +5,9 @@
   position: relative;
   height: 50rem;
 
-
   &__side {
-    height: 57rem;
+    height: 62rem;
+    padding: 0.5rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -17,8 +17,7 @@
     backface-visibility: hidden;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &--front {
       background-color: $color-white;
@@ -26,17 +25,7 @@
 
     &--back {
       transform: rotateY(180deg);
-
-      &--1 {
-        background-image: linear-gradient(to right bottom,
-            $secondary-color-light,
-            $secondary-color-dark);
-      }
-
-
-
     }
-
   }
 
   &:hover &__side--front {
@@ -47,47 +36,34 @@
     transform: rotateY(0);
   }
 
-
   // front side of card styling
   &__picture {
     background-size: cover;
-    height: 30rem;
+    height: 25rem;
     background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 
     &--1 {
-      background-image: linear-gradient(to right,
-          $secondary-color-light,
-          $secondary-color-dark), url(../img/nat-5.jpg);
+      background-image: url(/img/Mashalashelter.png);
     }
 
     &--2 {
-      background-image: url(../img/nat-5.jpg);
-
+      background-image: url(/img/Savelebanesehospitality.png);
     }
 
     &--3 {
-      background-image: url(../img/nat-5.jpg);
-
+      background-image: url(/img/TheBakeress_1.png);
     }
-
   }
 
   &__heading {
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 400;
     text-transform: uppercase;
-    color: $color-white;
-    position: absolute;
-    top: 18rem;
-    right: 2rem;
-    text-align: right;
-    -webkit-box-direction-break: clone;
-    box-decoration-break: clone;
-
+    color: black;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 
   &__heading-span {
@@ -96,37 +72,48 @@
     box-decoration-break: clone;
 
     &--1 {
-      background-image: linear-gradient(to right bottom,
-          rgba($secondary-color-light, 0.85),
-          rgba($secondary-color-dark, 0.85));
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($secondary-color-light, 0.45),
+        rgba($secondary-color-dark, 0.45)
+      );
     }
 
-    &--2 {}
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($secondary-color-light, 0.45),
+        rgba($secondary-color-dark, 0.45)
+      );
+    }
 
-    &--3 {}
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($secondary-color-light, 0.45),
+        rgba($secondary-color-dark, 0.45)
+      );
+    }
   }
 
-
   &__details {
-
-    padding: 0 3rem;
+    padding: 1rem 4rem;
 
     ul {
       list-style: none;
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
 
       li {
         text-align: center;
-        font-size: 1.5rem;
-        padding: 0.5rem;
+        font-size: 1.7rem;
+        padding: 1rem;
 
         &:not(:last-child) {
           border-bottom: 1px solid $color-grey-light-2;
         }
       }
     }
-
   }
 
   // Back side of card styling
@@ -140,14 +127,13 @@
 
   &__specs-box {
     text-align: center;
-    color: $color-white;
     margin-bottom: 2rem;
   }
 
   &__specs-text {
     ul {
       list-style: none;
-      width: 90%;
+      width: 100%;
 
       li {
         text-align: center;
@@ -155,21 +141,17 @@
         padding: 0.5rem;
 
         &:not(:last-child) {
-          // border-bottom: 1px solid $color-grey-light-2;
+          border-bottom: 1px solid $color-grey-light-2;
         }
       }
     }
-
   }
 
-
   @include respond(tab-port) {
-
     height: auto;
     // border-radius: 3px;
     background-color: $color-white;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &__side {
       height: auto;
@@ -179,9 +161,8 @@
 
       &--back {
         transform: rotateY(0);
-        clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%)
+        clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
       }
-
     }
 
     &:hover &__side--front {
@@ -218,8 +199,6 @@
           }
         }
       }
-
     }
   }
-
 }
