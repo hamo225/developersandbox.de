@@ -90,7 +90,7 @@ body {
 body {
   font-family: "lato";
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.7;
   color: #777; }
 
@@ -173,12 +173,12 @@ body {
       font-size: 2.4rem; } }
 
 .headingTertiary {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 2rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 4rem; }
 
@@ -282,7 +282,7 @@ body {
   color: #494949;
   padding: 1rem;
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 2rem;
   border-bottom: 1px solid #494949;
   transition: all 0.2s; }
 
@@ -362,8 +362,7 @@ body {
     max-width: 70%; }
 
 .iconify {
-  font-size: 10rem;
-  padding: 1rem; }
+  font-size: 10rem; }
 
 .card {
   perspective: 150rem;
@@ -371,8 +370,7 @@ body {
   position: relative;
   height: 50rem; }
   .card__side {
-    height: 62rem;
-    padding: 0.5rem;
+    height: 58rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -383,8 +381,6 @@ body {
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-    .card__side--front {
-      background-color: #fff; }
     .card__side--back {
       transform: rotateY(180deg); }
   .card:hover .card__side--front {
@@ -398,18 +394,21 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: url(/img/Mashalashelter.png); }
+      background-image: url(/img/Mashalashelter.png);
+      border-bottom: 1px solid black; }
     .card__picture--2 {
-      background-image: url(/img/Savelebanesehospitality.png); }
+      background-image: url(/img/Savelebanesehospitality.png);
+      border-bottom: 1px solid black; }
     .card__picture--3 {
-      background-image: url(/img/TheBakeress_1.png); }
+      background-image: url(/img/TheBakeress_1.png);
+      border-bottom: 1px solid black; }
   .card__heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 400;
     text-transform: uppercase;
     color: black;
     text-align: center;
-    margin-bottom: 2rem; }
+    margin-bottom: 3rem; }
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
@@ -421,11 +420,11 @@ body {
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(211, 211, 188, 0.45), rgba(172, 178, 180, 0.45)); }
   .card__details {
-    padding: 1rem 4rem; }
+    padding-top: 1rem; }
     .card__details ul {
       list-style: none;
-      width: 100%;
-      margin: 0 auto; }
+      width: 50%;
+      margin: 2rem auto; }
       .card__details ul li {
         text-align: center;
         font-size: 1.7rem;
@@ -436,17 +435,16 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+    transform: translate(-50%, -50%); }
   .card__specs-box {
-    text-align: center;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    margin-top: 2rem; }
   .card__specs-text ul {
     list-style: none;
-    width: 100%; }
+    width: 100%;
+    margin: 2rem auto; }
     .card__specs-text ul li {
-      text-align: center;
-      font-size: 2rem;
+      font-size: 1.7rem;
       padding: 0.5rem; }
       .card__specs-text ul li:not(:last-child) {
         border-bottom: 1px solid #eee; }
@@ -490,7 +488,7 @@ body {
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
   transform: skewX(-12deg); }
   @media only screen and (max-width: 56.25em) {
     .stories {
@@ -719,18 +717,6 @@ body {
   position: relative;
   /* clip-path works its way around from top left to each corner of the image */
   clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 51vh); }
-  @media only screen and (max-width: 56.25em) {
-    .header {
-      clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
-      height: 70vh; } }
-  @media only screen and (max-width: 37.5em) {
-    .header {
-      clip-path: polygon(0 0, 100% 0, 100% 35vh, 0 100%);
-      height: 50vh; } }
-  @media only screen and (max-width: 31.25em) {
-    .header {
-      clip-path: polygon(0 0, 100% 0, 100% 25vh, 0 100%);
-      height: 40vh; } }
   .header__textBox {
     position: absolute;
     width: fit-content;
@@ -868,7 +854,7 @@ body {
 
 .navigation__background {
   height: 5rem;
-  width: 4em;
+  width: 3em;
   border-radius: 50%;
   position: fixed;
   top: 6rem;
@@ -985,32 +971,19 @@ body {
   @media only screen and (max-width: 37.5em) {
     .section-about {
       padding: 26rem 5rem; } }
+  .section-about .margin-bottom {
+    margin-bottom: 1rem; }
 
 .section-features {
   padding: 20rem;
   margin-top: 5rem; }
-  @media only screen and (max-width: 56.25em) {
-    .section-features {
-      padding: 8rem 5rem;
-      margin-top: -11rem; } }
   .section-features__row {
-    width: 150rem; }
+    width: 135rem; }
 
 .section-projects {
-  padding: 10rem 0;
-  margin-top: -5vh;
-  margin-bottom: 10rem; }
-  @media only screen and (max-width: 56.25em) {
-    .section-projects {
-      padding: 20rem 5rem 10rem 5rem; } }
-
-.section-stories {
-  padding: 10rem 0;
-  position: relative;
-  margin-top: 30rem; }
-  @media only screen and (max-width: 56.25em) {
-    .section-stories {
-      padding: 5rem 5rem; } }
+  margin-bottom: 20rem; }
+  .section-projects .row {
+    max-width: 150rem; }
 
 .section-contact {
   padding: 20rem 0; }
@@ -1035,3 +1008,37 @@ body {
     @media only screen and (max-width: 56.25em) {
       .contact__form {
         width: 100%; } }
+
+.typewriterHeading {
+  display: flex;
+  margin-bottom: 2rem; }
+
+.typewriter {
+  display: flex;
+  text-transform: lowercase;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid black;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em;
+  /* Adjust as needed */
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; }
+  50% {
+    border-color: black; } }

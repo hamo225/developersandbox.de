@@ -34,12 +34,7 @@ html {
   @include respond(phone) {
     font-size: 43.5%;
   }
-
-
 }
-
-
-
 
 /* put the font family in body element so that use inhertiance across all the children elements */
 
@@ -50,9 +45,7 @@ body {
   @include respond(tab-port) {
     padding: 0;
   }
-
 }
-
 
 ::selection {
   background-color: red;
