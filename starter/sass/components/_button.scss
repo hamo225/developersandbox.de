@@ -1,17 +1,15 @@
 .button {
-
   &,
   &:link,
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1rem 3rem;
+    // padding: 1rem 3rem;
     display: inline-block;
     border-radius: 10rem;
     /* makes all the transitions under this class link all have a smooth transition of 0.2 s  */
-    transition: all 0.2s;
+    transition: all 0.1s;
     position: relative;
-    font-size: $default-font-size;
 
     // changing the the button for the button element
     border: none;
@@ -40,24 +38,6 @@
     box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
   }
 
-  &--White {
-    color: $color-grey-dark;
-    background-color: $color-white;
-
-    &::after {
-      background-color: $color-white;
-    }
-  }
-
-  &--Blue {
-    color: $color-white;
-    background-color: $primary-color;
-
-    &::after {
-      background-color: $color-white;
-    }
-  }
-
   &::after {
     content: "";
     display: inline-block;
@@ -73,8 +53,12 @@
   }
 
   &--Animated {
-    animation: moveInBottom 0.5s ease-out 0.75;
+    animation: moveInBottom 0.8s ease-out 0.75;
     animation-fill-mode: backwards;
+  }
+
+  &--form {
+    padding: 1rem;
   }
 }
 
@@ -82,12 +66,11 @@
 /* styling elements under specialconditions */
 
 .button-small {
-
   &:link,
   &:visited {
     text-decoration: none;
     color: $primary-color;
-    padding: 3px;
+    padding: 1rem;
     display: inline-block;
     font-size: $default-font-size;
     border-bottom: 1px solid $primary-color;

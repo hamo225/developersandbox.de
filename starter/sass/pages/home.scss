@@ -19,6 +19,10 @@
     padding: 8rem 5rem;
     margin-top: -11rem;
   }
+
+  &__row {
+    width: 150rem;
+  }
 }
 
 .section-projects {
@@ -42,12 +46,7 @@
 }
 
 .section-contact {
-  padding: 10rem 0;
-  background-image: linear-gradient(
-    to right bottom,
-    $primary-color-light,
-    $primary-color-dark
-  );
+  padding: 20rem 0;
 
   @include respond(tab-port) {
     padding: 8rem 5rem;
@@ -55,16 +54,11 @@
 }
 
 .contact {
-  background-image: linear-gradient(
-      105deg,
-      rgba($color-white, 0.9) 0%,
-      rgba($color-white, 0.9) 60%,
-      transparent 50%
-    ),
-    url(../img/nat-10.jpg);
+  // background-color: #ebd4aa;
   background-size: cover;
-  border-radius: $default-border-radius;
   box-shadow: $default-box-shadow-darker;
+  position: relative;
+  border-radius: 50px;
 
   @include respond(tab-port) {
     background-image: linear-gradient(
@@ -79,7 +73,7 @@
   }
 
   &__form {
-    width: 50%;
+    width: 60%;
     padding: 6rem;
 
     @include respond(tab-port) {

@@ -1,9 +1,8 @@
 .feature-box {
-  background-color: transparent;
   border-radius: 20px;
-  padding: 5rem;
-  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  padding: 1.5rem;
   transition: all 0.2s;
+  text-align: center;
 
   @include respond(tab-port) {
     padding: 2rem;
@@ -16,6 +15,11 @@
   }
 
   & img {
-    width: 100%;
+    max-width: 70%;
   }
+}
+
+.iconify {
+  font-size: 10rem;
+  padding: 1rem;
 }

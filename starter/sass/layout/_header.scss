@@ -1,18 +1,14 @@
 .header {
   /* 95% of the viewport height */
-  height: 80vh;
+  height: 60vh;
   /* use background image to add gradient property */
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(rgb(96, 192, 209), 0.8),
-    rgba(rgb(30, 146, 167), 0.8)
-  );
+  background-color: #f1e6e6;
   /* will always fit the element in whatever the size of the viewport is */
   background-size: cover;
   background-position: top;
   position: relative;
   /* clip-path works its way around from top left to each corner of the image */
-  clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 80vh);
+  clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 51vh);
 
   @include respond(tab-port) {
     clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
@@ -42,5 +38,14 @@
     /* used to center the div in the middle of the page */
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+  &__profileLinks {
+    margin-right: 2rem;
+    transition: all ease 0.3s;
+
+    // &:hover {
+    //   transform: scale(1.3);
+    // }
   }
 }

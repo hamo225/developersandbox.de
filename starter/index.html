@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="css/icon-fonts.css">
   <link rel="stylesheet" href="css/icon-font.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
   <link rel="shortcut icon" type="image/png" href="" />
 
-  <title>Developer Sandbox | Front-End Development</title>
+  <title>My Developer Sandbox | Front-End Development</title>
 </head>
 
 <body>
@@ -31,17 +32,22 @@
     <nav class="navigation__nav">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="#" class="navigation__link">About</a>
+          <a href="#" class="navigation__link">ABOUT</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">TECH STACK</a>
         </li>
         <li class="navigation__item">
           <a href="#" class="navigation__link">Projects</a>
         </li>
         <li class="navigation__item">
+          <a href="#" class="navigation__link">TESTIMONIALS</a>
+        </li>
+        <li class="navigation__item">
           <a href="#" class="navigation__link">Contact</a>
         </li>
-
-
       </ul>
+
     </nav>
 
   </div>
@@ -52,18 +58,27 @@
       <h1 class="headingPrimary">
         <span class="headingPrimary__Main">
           <span class="headingPrimary__Main__brackets">
-           Developer's Sandbox
+           My Developer Sandbox
           </span> </span>
-        <span class="headingPrimary__Sub">my Front-End Development Journey</span>
+        <span class="headingPrimary__Sub">Front-End Development </span>
       </h1>
-      <!-- <a href="#" type="button" class="button button--White button--Animated">Discover more</a> -->
+      <figure><a href="https://github.com/hamo225"><img src="/img/GitHub-Mark-32px.png"  alt="" class="header__profileLinks button button--Animated" target="_blank" ></a> 
+        
+        <a href="https://www.linkedin.com/in/tarekhamaoui/"><img src="/img/linkedin.png" alt="" class="header__profileLinks button button--Animated" target="_blank"></a>
+
+        <a href="#contactMe"><img src="/img/call.png" alt="" class="header__profileLinks button button--Animated" target="_blank"></a>
+      
+      
+      </figure>
+
+     
     </div>
   </header>
 
   <main>
-    <section class="section-about">
+    <section class="section-about" id="aboutMe">
       <div class="u-center-text u-margin-bottom-big">
-        <!-- <h2 class="headingSecondary">Services</h2> -->
+        <!-- <h2 class="headingSecondary">About Me</h2> -->
       </div>
 
       <div class="row">
@@ -119,15 +134,15 @@
     <section class="section-features">
      
       <div class="u-center-text u-margin-bottom-big">
-        <h2 class="headingSecondary">Tools</h2>
+        <h2 class="headingSecondary">Tech Stack</h2>
       </div>
-      <div class="row">
-        <div class="col-1-of-5">
+      <div class="row section-features__row" >
+        <div class="col-1-of-7">
          <div class="feature-box">
           <img src="/img/css.png" alt="">
         </div>
         </div>
-        <div class="col-1-of-5">
+        <div class="col-1-of-7">
           <div class="feature-box">
 
           <img src="/img/js-file.png" alt="">
@@ -135,36 +150,42 @@
 
 
         </div>
-        <div class="col-1-of-5">
+        <div class="col-1-of-7">
           <div class="feature-box">
 
           <img src="/img/sass-2.png" alt="">
         </div>
 
         </div>
-        <div class="col-1-of-5">
+        <div class="col-1-of-7">
           <div class="feature-box">
-
-          <img src="/img/git.png" alt="">
+            <img src="/img/php.png" alt="">
         </div>
 
 
         </div>
-        <div class="col-1-of-5">
+        <div class="col-1-of-7">
           <div class="feature-box">
 
           <img src="/img/npm_icon_130871.png" alt="">
         </div>
-
-
-        </div>
-
       </div>
 
+        <div class="col-1-of-7">
+          <div class="feature-box">
+            <img src="/img/git.png" alt="">
 
+        </div>
+      </div>
+        <div class="col-1-of-7">
+          <div class="feature-box">
+            <span class="iconify" data-icon="logos-netlify" data-inline="false"></span>
+        </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section-projects">
+    <section class="section-projects" id="myProjects">
 
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="headingSecondary">Projects</h2>
@@ -217,8 +238,13 @@
                 </ul>
                   </div>
                 </div> 
-                <a href="#popup-mashala" class="button button--White ">tell me More &rarr;</a>
-                <a href="#popup-mashala" class="button button--White ">Visit Site &rarr;</a>
+                <div class="button-small-section ">
+                <a href="#popup-mashala" class=" button-small ">tell me More &rarr;</a>
+              </div>
+                <div class="button-small-section ">
+
+                <a href="#popup-mashala" class=" button-small button-small-section ">Visit Site &rarr;</a>
+              </div>
               </div>
             </div>
 
@@ -266,8 +292,13 @@
 
                   </div>
                 </div> -->
-                <a href="#popup-slh" class="button button--White ">tell me More &rarr;</a>
-                <a href="#popup-slh" class="button button--White ">Visit Site &rarr;</a>
+                <div class="button-small-section ">
+                  <a href="#popup-mashala" class=" button-small ">tell me More &rarr;</a>
+                </div>
+                  <div class="button-small-section ">
+  
+                  <a href="#popup-mashala" class=" button-small button-small-section ">Visit Site &rarr;</a>
+                </div>
               </div>
             </div>
 
@@ -314,8 +345,13 @@
                 </ul>
                   </div>
                 </div>
-                <a href="#popup-bakeress" class="button button--White ">Github Repo &rarr;</a>
-                <a href="#popup-bakeress" class="button button--White ">Visit Site &rarr;</a>
+                <div class="button-small-section ">
+                  <a href="#popup-mashala" class=" button-small ">tell me More &rarr;</a>
+                </div>
+                  <div class="button-small-section ">
+  
+                  <a href="#popup-mashala" class=" button-small button-small-section ">Visit Site &rarr;</a>
+                </div>
               </div>
             </div>
 
@@ -334,138 +370,47 @@
       </div> -->
     </section>
 
-
-    <section class="section-stories">
-      <div class="bg-video">
-        <video class="bg-video__content" autoplay muted loop>
-          <source src="img/video.mp4" type="video/mp4">
-          </source src="img/video.webm" type="video/webm">
-          Your browser is not supported
-
-        </video>
-      </div>
-      <!-- <div class="u-center-text u-margin-bottom-big">
-        <h2 class="headingSecondary">Testimonials</h2>
-      </div> -->
-
-      <div class="row">
-
-        <div class="stories">
-          <figure class="stories__shape">
-            <img src="img/nat-8.jpg" alt="" class="stories__image">
-            <figcaption class="stories__caption">KIM MAJDALANI</figcaption>
-
-          </figure>
-
-          <div class="stories__text">
-
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              Mashala Shelter
-            </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, a facere consequuntur quia culpa nesciunt voluptatem itaque doloribus quibusdam, non iure labore, debitis quod alias beatae ratione asperiores libero quam!
-
-            </p>
-
-          </div>
-        </div>
-      </div>
-      <div class="row">
-
-        <div class="stories">
-          <figure class="stories__shape">
-            <img src="img/nat-9.jpg" alt="" class="stories__image">
-            <figcaption class="stories__caption">Angela Dona</figcaption>
-
-          </figure>
-
-          <div class="stories__text">
-
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              Save Lebanese Hospitality
-            </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque amet numquam voluptatum cupiditate. Et voluptate facilis magni a quaerat aliquam doloremque, qui perspiciatis odit? Eius, dolorem. Obcaecati dignissimos doloribus optio!
-            </p>
-
-          </div>
-        </div>
-      </div>
-      <div class="row">
-
-        <div class="stories">
-          <figure class="stories__shape">
-            <img src="img/nat-10.jpg" alt="" class="stories__image">
-            <figcaption class="stories__caption">Sarah Sawan</figcaption>
-
-          </figure>
-
-          <div class="stories__text">
-
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              The Bakeress
-            </h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, beatae. Placeat, molestiae vel. Et, corporis explicabo. Dolore, recusandae dicta minus nam totam optio aliquid nulla impedit corporis ut! Corporis, vero!
-            </p>
-
-          </div>
-        </div>
-      </div>
-      <div class="u-center-text u-margin-top-big button-small-section">
-        <a href="#" class="button-small">Read More Stories &rarr;</a>
-      </div>
-    </section>
-
     <!-- section contact is the whole section -->
-    <section class="section-contact">
+    <section class="section-contact" id="contactMe">
       <!-- never style a row class -->
       <div class="row">
         <!-- this is the box that contains the form -->
         <div class="contact">
+          <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+              <source src="img/video.mp4" type="video/mp4">
+              </source src="img/video.webm" type="video/webm">
+              Your browser is not supported
+    
+            </video>
+          </div>
 
-          <!-- this is the form -->
           <div class="contact__form">
-
+          
             <form action="#" class="form">
 
               <div class="u-margin-bottom-medium">
                 <h2 class="headingSecondary">Contact Me</h2>
               </div>
               <div class="form__group">
-                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-                <label for="name" class="form__label">Full Name</label>
+                <input type="text" class="form__input" placeholder="Your Full Name" id="name" required>
+                <label for="name" class="form__label">Your Full Name</label>
               </div>
               <div class="form__group">
-                <input type="email" class="form__input" placeholder="Enter Email" id="email" required>
-                <label for="email" class="form__label">Enter Email</label>
+                <input type="email" class="form__input" placeholder="Your Email" id="email" required>
+                <label for="email" class="form__label">Enter Your Email</label>
               </div>
-              <!-- <div class="form__group">
-                <textarea name="text-box" id="text-box" cols="50" rows="10" class="form__text-box"></textarea>
-              </div> -->
 
               <div class="form__group">
                 <div>
-                  <textarea class="form__textarea" name="" id="" cols="45" rows="5" placeholder="Message"
+                  <textarea class="form__textarea" name="" id="" cols="45" rows="5" placeholder="Your Message"
                     required></textarea>
                 </div>
               </div>
               <div class="form__group">
-                <!-- <div class="form__radio-group">
-                  <input type="radio" class="form__radio-input" id="project" name="projectchoice">
-                  <label for="project" class="form__radio-label">
-                    <span class="form__radio-button"></span>
-                    Freelance </label>
-
-                  <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="shared-project" name="projectchoice">
-                    <label for="shared-project" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-
-                      Collaboration</label>
-                  </div>
-
-
-                </div> -->
+              
                 <div class="form__group u-margin-top-medium">
-                  <button class="button button--Blue">Submit &rarr;</button>
+                  <button class="button button--form">Submit &rarr;</button>
                 </div>
               </div>
 
@@ -481,18 +426,24 @@
       <div class="footer__logo-box">
         <h1 class="headingPrimary footer__logo">
           <span class="headingPrimary__Main"> <span class="headingPrimary__Main__brackets">
-              Developer Sandbox
+              mY Developer Sandbox
      </span>
         </h1>
+        <figure><a href="https://github.com/hamo225"><img src="/img/GitHub-Mark-32px.png"  alt="" class="header__profileLinks button button--Animated" target="_blank" ></a> 
+        
+          <a href="https://www.linkedin.com/in/tarekhamaoui/"><img src="/img/linkedin.png" alt="" class="header__profileLinks button button--Animated" target="_blank"></a>
+        
+        </figure>
       </div>
       <div class="row">
         <div class="col-1-of-2">
           <div class="footer__navigation">
             <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Projects</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+              <li class="footer__item"><a href="#aboutMe" class="footer__link">About</a></li>
+              <li class="footer__item"><a href="#myProjects" class="footer__link">Projects</a></li>
+              <li class="footer__item"><a href="#contactMe" class="footer__link">Contact</a></li>
               <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+              
           </div>
           </ul>
 
@@ -512,7 +463,7 @@
 
   </footer>
 
-  <div class="popup" id="popup-mashala">
+  <!-- <div class="popup" id="popup-mashala">
     <div class="popup__content">
       <div class="popup__left">
         <img src="img/nat-8.jpg" alt="" class="popup__img">
@@ -575,7 +526,7 @@
         <a href="#" class="button button--Blue">Take me there</a>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- the grids to choose from -->
   <!-- <section class="gridTest">
       <div class="row">

@@ -95,7 +95,7 @@ body {
   color: #777; }
 
 .headingPrimary {
-  color: #fff;
+  color: #424141;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 2rem;
@@ -107,7 +107,7 @@ body {
     display: block;
     font-size: 5rem;
     letter-spacing: 2.5rem;
-    font-weight: 400;
+    font-weight: 900;
     animation-name: moveInLeft;
     animation-duration: 3s;
     /* animation-delay: 1s; */
@@ -128,7 +128,7 @@ body {
     display: block;
     font-size: 2rem;
     letter-spacing: 1.74rem;
-    font-weight: 700;
+    font-weight: 500;
     animation: moveInRight 3s; }
     @media only screen and (max-width: 56.25em) {
       .headingPrimary__Sub {
@@ -143,7 +143,7 @@ body {
         font-size: 1.5rem; } }
     @media only screen and (max-width: 25em) {
       .headingPrimary__Sub {
-        letter-spacing: .5rem;
+        letter-spacing: 0.5rem;
         font-size: 1.2rem; } }
 
 .headingSecondary {
@@ -157,9 +157,6 @@ body {
   color: transparent;
   transition: all 0.3s;
   letter-spacing: 2px; }
-  .headingSecondary:hover {
-    transform: skewY(5deg) skewX(10deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
   @media only screen and (max-width: 56.25em) {
     .headingSecondary {
       font-size: 2.5rem; } }
@@ -233,13 +230,11 @@ body {
 .button, .button:link, .button:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1rem 3rem;
   display: inline-block;
   border-radius: 10rem;
   /* makes all the transitions under this class link all have a smooth transition of 0.2 s  */
-  transition: all 0.2s;
+  transition: all 0.1s;
   position: relative;
-  font-size: 1.6rem;
   border: none;
   cursor: pointer; }
   @media only screen and (max-width: 31.25em) {
@@ -260,18 +255,6 @@ body {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
 
-.button--White {
-  color: #777;
-  background-color: #fff; }
-  .button--White::after {
-    background-color: #fff; }
-
-.button--Blue {
-  color: #fff;
-  background-color: #494949; }
-  .button--Blue::after {
-    background-color: #fff; }
-
 .button::after {
   content: "";
   display: inline-block;
@@ -286,15 +269,18 @@ body {
   backface-visibility: hidden; }
 
 .button--Animated {
-  animation: moveInBottom 0.5s ease-out 0.75;
+  animation: moveInBottom 0.8s ease-out 0.75;
   animation-fill-mode: backwards; }
+
+.button--form {
+  padding: 1rem; }
 
 /* Pseudo classes and elements */
 /* styling elements under specialconditions */
 .button-small:link, .button-small:visited {
   text-decoration: none;
   color: #494949;
-  padding: 3px;
+  padding: 1rem;
   display: inline-block;
   font-size: 1.6rem;
   border-bottom: 1px solid #494949;
@@ -361,11 +347,10 @@ body {
     transform: scale(0.95); }
 
 .feature-box {
-  background-color: transparent;
   border-radius: 20px;
-  padding: 5rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: all 0.2s; }
+  padding: 1.5rem;
+  transition: all 0.2s;
+  text-align: center; }
   @media only screen and (max-width: 56.25em) {
     .feature-box {
       padding: 2rem; } }
@@ -374,7 +359,11 @@ body {
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.7);
     z-index: 20; }
   .feature-box img {
-    width: 100%; }
+    max-width: 70%; }
+
+.iconify {
+  font-size: 10rem;
+  padding: 1rem; }
 
 .card {
   perspective: 150rem;
@@ -575,7 +564,9 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    overflow: hidden; }
+    object-position: center;
+    overflow: hidden;
+    border-radius: 50px; }
 
 .form__group:not(:last-child) {
   margin-bottom: 1rem; }
@@ -585,8 +576,8 @@ body {
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
   color: inherit;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
+  border-radius: 20px;
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
@@ -595,11 +586,9 @@ body {
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #494949; }
+    border-bottom: 3px solid green; }
   .form__input:focus:invalid {
     border-bottom: 3px solid red; }
-  .form__input::-webkit-input-placeholder {
-    color: #999; }
   @media only screen and (max-width: 25em) {
     .form__input {
       width: 100%; } }
@@ -607,12 +596,11 @@ body {
 .form__textarea {
   border: none;
   width: 90%;
-  background-color: rgba(255, 255, 255, 0.5);
   font-family: inherit;
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
   color: inherit;
-  border-radius: 2px; }
+  border-radius: 20px; }
   @media only screen and (max-width: 25em) {
     .form__textarea {
       width: 100%; } }
@@ -621,7 +609,7 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   margin-left: 2rem;
-  margin-top: .7rem;
+  margin-top: 0.7rem;
   display: block;
   transition: all 0.3s; }
 
@@ -629,50 +617,6 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem); }
-
-.form__radio-group {
-  display: inline-block;
-  padding-left: 9rem;
-  padding-top: 1rem; }
-  @media only screen and (max-width: 31.25em) {
-    .form__radio-group {
-      width: 100%;
-      margin-bottom: 1rem; } }
-
-.form__radio-input {
-  display: none; }
-
-.form__radio-label {
-  font-size: 1.6rem;
-  cursor: pointer;
-  position: relative;
-  padding-left: 1rem; }
-
-.form__radio-button {
-  height: 3rem;
-  width: 3rem;
-  border: 5px solid #494949;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  left: -2.4rem;
-  top: -.4em; }
-  .form__radio-button::after {
-    content: '';
-    display: block;
-    border-radius: 50%;
-    height: 1.5rem;
-    width: 1.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #494949;
-    opacity: 0;
-    transition: opacity .2s; }
-
-.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
-  opacity: 1; }
 
 .popup {
   height: 100vh;
@@ -766,15 +710,15 @@ body {
 
 .header {
   /* 95% of the viewport height */
-  height: 80vh;
+  height: 60vh;
   /* use background image to add gradient property */
-  background-image: linear-gradient(to right bottom, rgba(96, 192, 209, 0.8), rgba(30, 146, 167, 0.8));
+  background-color: #f1e6e6;
   /* will always fit the element in whatever the size of the viewport is */
   background-size: cover;
   background-position: top;
   position: relative;
   /* clip-path works its way around from top left to each corner of the image */
-  clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 80vh); }
+  clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 51vh); }
   @media only screen and (max-width: 56.25em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
@@ -795,9 +739,12 @@ body {
     /* used to center the div in the middle of the page */
     transform: translate(-50%, -50%);
     text-align: center; }
+  .header__profileLinks {
+    margin-right: 2rem;
+    transition: all ease 0.3s; }
 
 .row {
-  max-width: 151rem;
+  max-width: 150rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 6rem; }
@@ -828,6 +775,10 @@ body {
     width: calc((100% - 18rem) / 4); }
   .row .col-1-of-5 {
     width: calc((100% - 24rem) / 5); }
+  .row .col-1-of-7 {
+    width: calc((100% - 36rem) / 7); }
+  .row .col-1-of-8 {
+    width: calc((100% - 42rem) / 8); }
   .row .col-2-of-3 {
     width: calc( (2 * (100% - 12rem) / 3) + 6rem); }
   .row .col-2-of-4 {
@@ -836,7 +787,7 @@ body {
     width: calc( 3 * (100% - 18rem) / 4 + (2 *6rem)); }
 
 .footer {
-  background-color: #333;
+  background-color: #f1e6e6;
   padding: 10rem 0;
   font-size: 1.4rem; }
   @media only screen and (max-width: 56.25em) {
@@ -851,8 +802,6 @@ body {
   .footer__logo {
     height: auto; }
   .footer__navigation {
-    border-top: 1px solid #777;
-    padding-top: 2rem;
     display: inline-block; }
     @media only screen and (max-width: 56.25em) {
       .footer__navigation {
@@ -866,22 +815,17 @@ body {
     .footer__item:not(:last-child) {
       margin-right: 2rem; }
   .footer__link:link, .footer__link:visited {
-    color: #f7f7f7;
-    background-color: #333;
+    color: #424141;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
     transition: all 0.2s; }
   .footer__link:hover, .footer__link:active {
-    color: #494949;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    transform: rotate(5deg) scale(1.3); }
+    transform: scale(1.3); }
   .footer__copyright {
-    border-top: 1px solid #777;
-    padding-top: 2rem;
     width: 80%;
     float: right;
-    color: #f7f7f7; }
+    color: #424141; }
     @media only screen and (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;
@@ -1049,6 +993,8 @@ body {
     .section-features {
       padding: 8rem 5rem;
       margin-top: -11rem; } }
+  .section-features__row {
+    width: 150rem; }
 
 .section-projects {
   padding: 10rem 0;
@@ -1067,17 +1013,16 @@ body {
       padding: 5rem 5rem; } }
 
 .section-contact {
-  padding: 10rem 0;
-  background-image: linear-gradient(to right bottom, #494949, #494949); }
+  padding: 20rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-contact {
       padding: 8rem 5rem; } }
 
 .contact {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 50%), url(../img/nat-10.jpg);
   background-size: cover;
-  border-radius: 15px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
+  position: relative;
+  border-radius: 50px; }
   @media only screen and (max-width: 56.25em) {
     .contact {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
@@ -1085,7 +1030,7 @@ body {
       border-radius: 15px;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35); } }
   .contact__form {
-    width: 50%;
+    width: 60%;
     padding: 6rem; }
     @media only screen and (max-width: 56.25em) {
       .contact__form {
