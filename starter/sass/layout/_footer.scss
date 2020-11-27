@@ -1,33 +1,24 @@
 .footer {
   background-color: #f1e6e6;
-  padding: 10rem 0;
-  font-size: 1.4rem;
-
-  @include respond(tab-port) {
-    padding: 5rem 0 1rem 0;
-  }
+  padding: 3rem 0;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 5rem;
 
   &__logo-box {
-    margin-bottom: 8rem;
+    // margin-bottom: 10rem;
     text-align: center;
 
-    @include respond(tab-port) {
-      margin-bottom: 4rem;
+    span {
+      font-size: 3rem;
+      letter-spacing: 2rem;
     }
-  }
-
-  &__logo {
-    height: auto;
   }
 
   &__navigation {
     display: inline-block;
-
-    @include respond(tab-port) {
-      width: 100%;
-      text-align: center;
-      border-top: none;
-    }
+    width: 100vw;
+    margin-top: 5rem;
   }
 
   &__list {
@@ -62,17 +53,6 @@
   }
 
   &__copyright {
-    width: 80%;
-    float: right;
-
     color: rgb(66, 65, 65);
-
-    @include respond(tab-port) {
-      width: 100%;
-      float: none;
-      border-top: none;
-      text-align: center;
-      padding-top: 0em;
-    }
   }
 }

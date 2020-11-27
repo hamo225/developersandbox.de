@@ -1,107 +1,62 @@
 .section-about {
-  // background-color: $color-grey-light;
-  padding: 0 10rem;
+  margin-top: 5rem;
 
-  @include respond(tab-port) {
-    padding: 20rem 5rem;
-  }
+  // @include respond(tab-port) {
+  //   padding: 20rem 5rem;
+  // }
 
-  @include respond(phone) {
-    padding: 26rem 5rem;
-  }
+  // @include respond(phone) {
+  //   padding: 26rem 5rem;
+  // }
 
-  .margin-bottom {
-    margin-bottom: 1rem;
+  .row {
+    max-width: 120rem;
   }
 }
 
 .section-features {
-  padding: 20rem;
-  margin-top: 5rem;
-
+  margin: 20rem 0;
   &__row {
-    width: 135rem;
+    width: 120rem;
   }
 }
 
 .section-projects {
-  margin-bottom: 20rem;
+  margin: 20rem 0;
 
   & .row {
-    max-width: 150rem;
+    max-width: 130rem;
   }
 }
 
 .section-contact {
-  padding: 20rem 0;
-
-  @include respond(tab-port) {
-    padding: 8rem 5rem;
-  }
+  padding: 10rem 0 20rem;
 }
 
 .contact {
-  // background-color: #ebd4aa;
+  width: 60%;
   background-size: cover;
   box-shadow: $default-box-shadow-darker;
   position: relative;
   border-radius: 50px;
+  margin: 0 auto;
 
-  @include respond(tab-port) {
-    background-image: linear-gradient(
-        to right,
-        rgba($color-white, 0.9) 0%,
-        rgba($color-white, 0.9) 100%
-      ),
-      url(../img/nat-10.jpg);
-    background-size: cover;
-    border-radius: $default-border-radius;
-    box-shadow: $default-box-shadow-darker;
-  }
+  // @include respond(tab-port) {
+  //   background-image: linear-gradient(
+  //       to right,
+  //       rgba($color-white, 0.9) 0%,
+  //       rgba($color-white, 0.9) 100%
+  //     ),
+  //     url(../img/nat-10.jpg);
+  //   background-size: cover;
+  //   border-radius: $default-border-radius;
+  //   box-shadow: $default-box-shadow-darker;
+  // }
 
   &__form {
-    width: 60%;
-    padding: 6rem;
-
+    padding: 5rem 5rem 5rem 12rem;
     @include respond(tab-port) {
       width: 100%;
     }
-  }
-}
-
-.typewriterHeading {
-  display: flex;
-  margin-bottom: 2rem;
-}
-
-.typewriter {
-  display: flex;
-  text-transform: lowercase;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.1em; /* Adjust as needed */
-  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
   }
 }

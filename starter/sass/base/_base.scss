@@ -16,38 +16,17 @@ html {
 
   // the media queries need to be orders from highest to lowest
 
-  font-size: 45.5%; //1 rem is 10px, 10px/16px = 62.5%
-
-  @include respond(big-desktop) {
-    font-size: 75%; // 1 rem to look like 12px
-  }
-
-  @include respond(tab-land) {
-    //if want 1 rem to equal 8 which is 50% then change here and everywhere will be 8 now equal to one rem
-    font-size: 60%;
-  }
-
-  @include respond(tab-port) {
-    font-size: 53%; //1 rem to be 7px
-  }
-
-  @include respond(phone) {
-    font-size: 43.5%;
-  }
+  font-size: 62.5%; //1 rem is 10px, 10px/16px = 62.5%
 }
 
 /* put the font family in body element so that use inhertiance across all the children elements */
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
-
-  @include respond(tab-port) {
-    padding: 0;
-  }
+  // padding: 3rem;
 }
 
 ::selection {
-  background-color: red;
-  color: white;
+  background-color: palegoldenrod;
+  color: black;
 }

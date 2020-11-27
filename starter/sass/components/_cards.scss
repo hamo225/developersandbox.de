@@ -6,8 +6,7 @@
   height: 50rem;
 
   &__side {
-    height: 58rem;
-
+    height: 50rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -57,7 +56,7 @@
   }
 
   &__heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
     text-transform: uppercase;
     color: black;
@@ -96,17 +95,16 @@
   }
 
   &__details {
-    padding-top: 1rem;
-
     ul {
       list-style: none;
       width: 50%;
-      margin: 2rem auto;
+      margin: 0 auto;
+      padding: 2rem;
 
       li {
         text-align: center;
         font-size: 1.7rem;
-        padding: 1rem;
+        padding: 0.5rem;
 
         &:not(:last-child) {
           border-bottom: 1px solid $color-grey-light-2;
@@ -125,16 +123,13 @@
   }
 
   &__specs-box {
-    // text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    text-align: center;
+    margin: 5rem 0;
   }
 
   &__specs-text {
     ul {
       list-style: none;
-      width: 100%;
-      margin: 2rem auto;
 
       li {
         // text-align: center;

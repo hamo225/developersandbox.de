@@ -14,34 +14,18 @@ body {
 
   &__Main {
     display: block;
-    font-size: 5rem;
     letter-spacing: 2.5rem;
-    font-weight: 900;
+    font-weight: 500;
     animation-name: moveInLeft;
     animation-duration: 3s;
-    /* animation-delay: 1s; */
-    /* animation-iteration-count: 3; */
-    /* animation-timing-function: ease-out; */
+    // animation-delay: 0.3s;
+    animation-timing-function: ease-out;
 
-    @include respond(tab-port) {
-      font-size: 4rem;
-    }
-
-    @include respond(phone) {
-      letter-spacing: 1rem;
-      font-size: 3.5rem;
-    }
-
-    @include respond(small-phone) {
-      letter-spacing: 1rem;
-      font-size: 2.7rem;
-    }
+    // @include respond(phone) {
+    //   letter-spacing: 1rem;
+    //   font-size: 3.5rem;
+    // }
   }
-
-  /* 
-      .&Main:hover {
-        animation-name: popUp;
-      } */
 
   &__Sub {
     display: block;
@@ -50,24 +34,24 @@ body {
     font-weight: 500;
     animation: moveInRight 3s;
 
-    @include respond(tab-port) {
-      font-size: 2rem;
-    }
+    // @include respond(tab-port) {
+    //   font-size: 2rem;
+    // }
 
-    @include respond(phone) {
-      font-size: 1.5rem;
-      letter-spacing: 1rem;
-    }
+    // @include respond(phone) {
+    //   font-size: 1.5rem;
+    //   letter-spacing: 1rem;
+    // }
 
-    @include respond(mid-phone) {
-      letter-spacing: 0.5rem;
-      font-size: 1.5rem;
-    }
+    // @include respond(mid-phone) {
+    //   letter-spacing: 0.5rem;
+    //   font-size: 1.5rem;
+    // }
 
-    @include respond(small-phone) {
-      letter-spacing: 0.5rem;
-      font-size: 1.2rem;
-    }
+    // @include respond(small-phone) {
+    //   letter-spacing: 0.5rem;
+    //   font-size: 1.2rem;
+    // }
   }
 }
 
@@ -121,7 +105,7 @@ body {
 }
 
 .headingPrimary__Main__brackets {
-  font-size: 6rem;
+  font-size: 5rem;
 
   @include respond(phone) {
     letter-spacing: 1rem;

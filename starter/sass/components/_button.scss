@@ -8,7 +8,7 @@
     display: inline-block;
     border-radius: 10rem;
     /* makes all the transitions under this class link all have a smooth transition of 0.2 s  */
-    transition: all 0.1s;
+    transition: 0.3s ease-in;
     position: relative;
 
     // changing the the button for the button element
@@ -23,13 +23,15 @@
 
   &:hover {
     /* this pops the element up 3px */
-    transform: translateY(-0.5rem);
+    // transform: translateY(-0.5rem);
+    transform: rotate(360deg);
     box-shadow: 0 10px 20px rgba($color-black, 0.2);
+    transition: 0.3s ease-in;
 
-    &::after {
-      transform: scaleX(1.5) scaleY(1.6);
-      opacity: 0;
-    }
+    // &::after {
+    //   transform: scaleX(1.5) scaleY(1.6);
+    //   opacity: 0;
+    // }
   }
 
   &:active {
@@ -59,6 +61,7 @@
 
   &--form {
     padding: 1rem;
+    background-color: white;
   }
 }
 
