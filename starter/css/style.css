@@ -106,7 +106,7 @@ body {
   color: black; }
 
 body {
-  font-family: "lato";
+  font-family: "Century Gothic", sans-serif !important;
   font-weight: 400;
   font-size: 1.7rem;
   line-height: 1.7;
@@ -372,7 +372,7 @@ body {
     transform: rotateY(0); }
   .card__picture {
     background-size: cover;
-    height: 25rem;
+    height: 21rem;
     background-blend-mode: screen;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
@@ -384,6 +384,18 @@ body {
       border-bottom: 1px solid black; }
     .card__picture--3 {
       background-image: url(/img/TheBakeress_1.png);
+      border-bottom: 1px solid black; }
+    .card__picture--4 {
+      background-image: url(/img/portfolio.png);
+      border-bottom: 1px solid black; }
+    .card__picture--5 {
+      background-image: url(/img/Real-Estate.png);
+      border-bottom: 1px solid black; }
+    .card__picture--6 {
+      background-image: url(/img/Booking-platform.png);
+      border-bottom: 1px solid black; }
+    .card__picture--7 {
+      background-image: url(/img/dice-game.png);
       border-bottom: 1px solid black; }
   .card__heading {
     font-size: 2rem;
@@ -543,8 +555,7 @@ body {
     width: 100%;
     object-fit: cover;
     object-position: center;
-    overflow: hidden;
-    border-radius: 50px; }
+    overflow: hidden; }
 
 .form__group:not(:last-child) {
   margin-bottom: 1rem; }
@@ -555,7 +566,6 @@ body {
   padding: 1.5rem 2rem;
   color: inherit;
   background-color: white;
-  border-radius: 20px;
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
@@ -577,8 +587,7 @@ body {
   font-family: inherit;
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
-  color: inherit;
-  border-radius: 20px; }
+  color: inherit; }
   @media only screen and (max-width: 25em) {
     .form__textarea {
       width: 100%; } }
@@ -945,11 +954,10 @@ body {
   padding: 10rem 0 20rem; }
 
 .contact {
-  width: 60%;
+  width: 80%;
   background-size: cover;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
   position: relative;
-  border-radius: 50px;
   margin: 0 auto; }
   .contact__form {
     padding: 5rem 5rem 5rem 12rem; }

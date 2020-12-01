@@ -34,11 +34,10 @@
 }
 
 .contact {
-  width: 60%;
+  width: 80%;
   background-size: cover;
   box-shadow: $default-box-shadow-darker;
   position: relative;
-  border-radius: 50px;
   margin: 0 auto;
 
   // @include respond(tab-port) {

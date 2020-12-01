@@ -34,7 +34,7 @@
   // front side of card styling
   &__picture {
     background-size: cover;
-    height: 25rem;
+    height: 21rem;
     background-blend-mode: screen;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -51,6 +51,25 @@
 
     &--3 {
       background-image: url(/img/TheBakeress_1.png);
+      border-bottom: 1px solid black;
+    }
+
+    &--4 {
+      background-image: url(/img/portfolio.png);
+      border-bottom: 1px solid black;
+    }
+
+    &--5 {
+      background-image: url(/img/Real-Estate.png);
+      border-bottom: 1px solid black;
+    }
+    &--6 {
+      background-image: url(/img/Booking-platform.png);
+      border-bottom: 1px solid black;
+    }
+
+    &--7 {
+      background-image: url(/img/dice-game.png);
       border-bottom: 1px solid black;
     }
   }
