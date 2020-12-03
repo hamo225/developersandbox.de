@@ -356,7 +356,7 @@ body {
   height: 50rem; }
   .card__side {
     height: 50rem;
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
     position: absolute;
     top: 0;
     left: 0;
@@ -367,7 +367,7 @@ body {
     overflow: hidden;
     background-color: #98bec8; }
     .card__side--back {
-      transform: rotateY(180deg); }
+      transform: rotateX(180deg); }
       .card__side--back--1 {
         background-color: #fdf0ec; }
       .card__side--back--2 {
@@ -385,9 +385,9 @@ body {
     .card__side-6 {
       background-color: #459a71; }
   .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
+    transform: rotateX(-180deg); }
   .card:hover .card__side--back {
-    transform: rotateY(0); }
+    transform: rotateX(0); }
   .card__picture {
     background-size: cover;
     height: 50%;
@@ -707,7 +707,7 @@ body {
 .header {
   /* 95% of the viewport height */
   height: 95vh;
-  background-color: #fefbf5;
+  background-color: #fdf0ec;
   z-index: -20;
   /* will always fit the element in whatever the size of the viewport is */
   background-size: cover;
@@ -807,9 +807,9 @@ body {
   height: 7rem;
   width: 7rem;
   position: fixed;
+  background-color: #fbda52;
   top: 5.5rem;
   right: 6.3rem;
-  border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -834,12 +834,11 @@ body {
 .navigation__background {
   height: 5rem;
   width: 3em;
-  border-radius: 50%;
   position: fixed;
   top: 6rem;
   right: 6.5rem;
-  background-image: radial-gradient(#494949, #494949);
-  z-index: 1000;
+  background-color: #fbda52;
+  z-index: 1800;
   transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
@@ -863,7 +862,7 @@ body {
   position: fixed;
   top: 0em;
   left: 0em;
-  z-index: 1500;
+  z-index: 1900;
   opacity: 0;
   width: 0em;
   transition: all 0.8s; }
@@ -886,9 +885,9 @@ body {
   font-size: 3rem;
   padding: 1rem;
   font-weight: 300;
-  color: #fff;
+  color: black;
   text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 240%;
   transition: all 0.4s; }
 
