@@ -10,16 +10,17 @@ body {
   color: rgb(66, 65, 65);
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   &__Main {
     display: block;
-    letter-spacing: 2.5rem;
-    font-weight: 500;
+    letter-spacing: 1rem;
+    font-weight: 900;
     animation-name: moveInLeft;
     animation-duration: 3s;
     // animation-delay: 0.3s;
     animation-timing-function: ease-out;
+    margin-bottom: 10rem;
 
     // @include respond(phone) {
     //   letter-spacing: 1rem;
@@ -33,6 +34,7 @@ body {
     letter-spacing: 1.74rem;
     font-weight: 500;
     animation: moveInRight 3s;
+    text-transform: lowercase;
 
     // @include respond(tab-port) {
     //   font-size: 2rem;
@@ -56,15 +58,9 @@ body {
 }
 
 .headingSecondary {
-  font-size: 3.5rem;
+  font-size: 8rem;
   text-transform: uppercase;
-  font-weight: 700;
-  display: inline-block;
-  background-image: linear-gradient(
-    to right,
-    $primary-color-light,
-    $primary-color-dark
-  );
+  background-image: linear-gradient(to right, rgb(0, 0, 0), black);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -98,6 +94,7 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
+  padding: 1rem;
 
   &:not(:last-child) {
     margin-bottom: 4rem;
@@ -106,6 +103,7 @@ body {
 
 .headingPrimary__Main__brackets {
   font-size: 5rem;
+  line-height: 7rem;
 
   @include respond(phone) {
     letter-spacing: 1rem;
@@ -121,4 +119,10 @@ body {
     letter-spacing: 1rem;
     font-size: 3rem;
   }
+}
+
+.section__title {
+  position: absolute;
+  top: -9rem;
+  z-index: 1000;
 }

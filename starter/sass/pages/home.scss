@@ -1,5 +1,7 @@
 .section-about {
-  margin-top: 5rem;
+  // margin-top: 5rem;
+  padding: 10rem 10rem;
+  position: relative;
 
   // @include respond(tab-port) {
   //   padding: 20rem 5rem;
@@ -8,34 +10,38 @@
   // @include respond(phone) {
   //   padding: 26rem 5rem;
   // }
-
-  .row {
-    max-width: 120rem;
-  }
 }
 
 .section-features {
-  margin: 20rem 0;
+  margin: 20rem 10rem;
+  padding: 20rem 0;
+  position: relative;
+  background-color: #7cc4a7;
+  // clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 70vh);
+
   &__row {
-    width: 120rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0 10rem;
   }
 }
 
 .section-projects {
-  margin: 20rem 0;
-
-  & .row {
-    max-width: 130rem;
-  }
+  margin: 40rem 10rem;
+  position: relative;
 }
 
 .section-contact {
-  padding: 10rem 0 20rem;
+  margin: 0 5rem 20rem;
 }
 
 .contact {
-  width: 80%;
+  width: 90%;
   background-size: cover;
+  // background-color: #7cc4a7;
+
   box-shadow: $default-box-shadow-darker;
   position: relative;
   margin: 0 auto;
@@ -53,9 +59,22 @@
   // }
 
   &__form {
-    padding: 5rem 5rem 5rem 12rem;
+    padding: 10rem 5rem 5rem 12rem;
     @include respond(tab-port) {
       width: 100%;
     }
   }
+}
+
+#section__title-contact {
+  position: absolute;
+  top: -19rem;
+  left: -12rem;
+}
+
+.section__title-about {
+  position: absolute;
+  top: -5rem;
+  left: 10rem;
+  z-index: -10;
 }

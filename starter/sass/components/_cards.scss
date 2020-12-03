@@ -12,14 +12,44 @@
     top: 0;
     left: 0;
     width: 100%;
+    padding: 1.5rem 3rem;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    background-color: #98bec8;
+    // box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &--back {
       transform: rotateY(180deg);
+
+      &--1 {
+        background-color: #d3e1e1;
+      }
+
+      &--2 {
+        background-color: #fdf0ec;
+      }
+    }
+
+    &-1 {
+      background-color: #98bec8;
+    }
+    &-2 {
+      background-color: #fbda52;
+    }
+    &-3 {
+      background-color: #d3e1e1;
+    }
+    &-4 {
+      background-color: #22548c;
+    }
+    &-5 {
+      background-color: #1a1a1a;
+    }
+    &-6 {
+      background-color: #459a71;
+    }
+    &-7 {
     }
   }
 
@@ -34,43 +64,38 @@
   // front side of card styling
   &__picture {
     background-size: cover;
-    height: 21rem;
-    background-blend-mode: screen;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    height: 50%;
+    width: 100%;
+
+    // background-blend-mode: screen;
+    // border-top-left-radius: 3px;
+    // border-top-right-radius: 3px;
 
     &--1 {
       background-image: url(/img/Mashalashelter.png);
-      border-bottom: 1px solid black;
     }
 
     &--2 {
       background-image: url(/img/Savelebanesehospitality.png);
-      border-bottom: 1px solid black;
     }
 
     &--3 {
       background-image: url(/img/TheBakeress_1.png);
-      border-bottom: 1px solid black;
     }
 
     &--4 {
       background-image: url(/img/portfolio.png);
-      border-bottom: 1px solid black;
     }
 
     &--5 {
       background-image: url(/img/Real-Estate.png);
-      border-bottom: 1px solid black;
     }
     &--6 {
       background-image: url(/img/Booking-platform.png);
-      border-bottom: 1px solid black;
     }
 
     &--7 {
       background-image: url(/img/dice-game.png);
-      border-bottom: 1px solid black;
     }
   }
 
@@ -119,15 +144,16 @@
       width: 50%;
       margin: 0 auto;
       padding: 2rem;
+      color: white;
 
       li {
         text-align: center;
         font-size: 1.7rem;
         padding: 0.5rem;
 
-        &:not(:last-child) {
-          border-bottom: 1px solid $color-grey-light-2;
-        }
+        // &:not(:last-child) {
+        //   border-bottom: 1px solid $color-grey-light-2;
+        // }
       }
     }
   }

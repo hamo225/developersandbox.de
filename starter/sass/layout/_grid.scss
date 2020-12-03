@@ -2,9 +2,9 @@
   max-width: $grid-width;
   margin: 0 auto;
 
-  &:not(:last-child) {
-    margin-bottom: $gutter-vertical-small;
-  }
+  // &:not(:last-child) {
+  //   margin-bottom: $gutter-vertical-small;
+  // }
 
   @include respond(tab-port) {
     max-width: 70rem;
@@ -21,7 +21,7 @@
     float: left;
 
     &:not(:last-child) {
-      margin-right: $gutter-horizontal;
+      // margin-right: $gutter-horizontal;
 
       @include respond(tab-port) {
         margin-right: 0;
@@ -40,7 +40,8 @@
   }
 
   .col-1-of-3 {
-    width: calc((100% - #{$gutter-horizontal * 2}) / 3);
+    // width: calc((100% - #{$gutter-horizontal * 2}) / 3);
+    width: calc(100% / 3);
   }
 
   .col-1-of-4 {
