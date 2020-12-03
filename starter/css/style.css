@@ -369,7 +369,7 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back--1 {
-        background-color: #d3e1e1; }
+        background-color: #fdf0ec; }
       .card__side--back--2 {
         background-color: #fdf0ec; }
     .card__side-1 {
@@ -381,7 +381,7 @@ body {
     .card__side-4 {
       background-color: #22548c; }
     .card__side-5 {
-      background-color: #1a1a1a; }
+      background-color: #4401018e; }
     .card__side-6 {
       background-color: #459a71; }
   .card:hover .card__side--front {
@@ -959,8 +959,11 @@ body {
     padding: 0 10rem; }
 
 .section-projects {
-  margin: 40rem 10rem;
+  margin: 20rem 10rem;
   position: relative; }
+
+.section__projects__outline {
+  background-color: #1a1a1a; }
 
 .section-contact {
   margin: 0 5rem 20rem; }
