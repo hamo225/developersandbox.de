@@ -959,7 +959,10 @@ body {
 
 .section-projects {
   margin: 20rem 10rem;
-  position: relative; }
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 5rem 0; }
 
 .section__projects__outline {
   background-color: #1a1a1a; }
