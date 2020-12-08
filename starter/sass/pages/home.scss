@@ -1,10 +1,6 @@
 .section-about {
   padding: 10rem 10rem;
   position: relative;
-
-  @include respond(tab-land) {
-    padding: 10rem 6rem 10rem 9rem;
-  }
 }
 
 .section-features {
@@ -12,11 +8,6 @@
   padding: 20rem 0;
   position: relative;
   background-color: #7cc4a7;
-
-  @include respond(tab-land) {
-    margin: 10rem 10rem 25rem;
-    padding: 15rem 0;
-  }
 
   &__row {
     display: flex;
@@ -30,6 +21,9 @@
 .section-projects {
   margin: 20rem 10rem;
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 5rem 0;
 }
 
 .section__projects__outline {

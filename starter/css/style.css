@@ -921,19 +921,12 @@ body {
 .section-about {
   padding: 10rem 10rem;
   position: relative; }
-  @media only screen and (max-width: 75em) {
-    .section-about {
-      padding: 10rem 6rem 10rem 9rem; } }
 
 .section-features {
   margin: 20rem 10rem;
   padding: 20rem 0;
   position: relative;
   background-color: #7cc4a7; }
-  @media only screen and (max-width: 75em) {
-    .section-features {
-      margin: 10rem 10rem 25rem;
-      padding: 15rem 0; } }
   .section-features__row {
     display: flex;
     flex-direction: row;
@@ -943,7 +936,10 @@ body {
 
 .section-projects {
   margin: 20rem 10rem;
-  position: relative; }
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 5rem 0; }
 
 .section__projects__outline {
   background-color: #1a1a1a; }
