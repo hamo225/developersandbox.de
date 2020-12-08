@@ -17,7 +17,6 @@
 0 - 600px: Phone
 600 - 900px:    Tablet Portrait
 900 - 1200px:   Tablet landscape
-600 - 900px:    Tablet Portrait
 (1200 - 1800): This is normal styles desktop first approach
 1800px + :      Big Desktop
 
@@ -30,73 +29,49 @@ $breakpoints choices
 
 // 1 em is 16px
 
-@mixin respond ($breakpoint) {
-
+@mixin respond($breakpoint) {
   @if $breakpoint==small-phone {
-
-    // 400px
-    @media only screen and(max-width: 25em) {
-      @content
+    // 375px
+    @media only screen and(max-width: 23.43em) {
+      @content;
     }
-
-    ;
-
   }
 
   @if $breakpoint==mid-phone {
-
     // 500px
     @media only screen and(max-width: 31.25em) {
-      @content
+      @content;
     }
-
-    ;
-
   }
 
-
   @if $breakpoint==phone {
-
     // 600px
     @media only screen and(max-width: 37.5em) {
-      @content
+      @content;
     }
-
-    ;
-
   }
 
   @if $breakpoint==tab-port {
-
     // 900px
     @media only screen and (max-width: 56.25em) {
-      @content
+      @content;
     }
-
-    ;
   }
 
   @if $breakpoint==tab-land {
-
     // 1200px
     @media only screen and (max-width: 75em) {
-      @content
+      @content;
     }
-
-    ;
   }
 
   @if $breakpoint==big-desktop {
-
     // 1800px
     @media only screen and(min-width: 112.5em) {
-      @content
+      @content;
     }
-
-    ;
   }
 }
-
 
 /* General order of Media Queries
 1- Base and Typography 

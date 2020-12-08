@@ -1,15 +1,10 @@
 .section-about {
-  // margin-top: 5rem;
   padding: 10rem 10rem;
   position: relative;
 
-  // @include respond(tab-port) {
-  //   padding: 20rem 5rem;
-  // }
-
-  // @include respond(phone) {
-  //   padding: 26rem 5rem;
-  // }
+  @include respond(tab-land) {
+    padding: 10rem 6rem 10rem 9rem;
+  }
 }
 
 .section-features {
@@ -17,7 +12,11 @@
   padding: 20rem 0;
   position: relative;
   background-color: #7cc4a7;
-  // clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 70vh);
+
+  @include respond(tab-land) {
+    margin: 10rem 10rem 25rem;
+    padding: 15rem 0;
+  }
 
   &__row {
     display: flex;
@@ -44,29 +43,20 @@
 .contact {
   width: 90%;
   background-size: cover;
-  // background-color: #7cc4a7;
 
   box-shadow: $default-box-shadow-darker;
   position: relative;
   margin: 0 auto;
-
-  // @include respond(tab-port) {
-  //   background-image: linear-gradient(
-  //       to right,
-  //       rgba($color-white, 0.9) 0%,
-  //       rgba($color-white, 0.9) 100%
-  //     ),
-  //     url(../img/nat-10.jpg);
-  //   background-size: cover;
-  //   border-radius: $default-border-radius;
-  //   box-shadow: $default-box-shadow-darker;
-  // }
 
   &__form {
     padding: 10rem 5rem 5rem 12rem;
     @include respond(tab-port) {
       width: 100%;
     }
+  }
+
+  @include respond(tab-land) {
+    width: 100%;
   }
 }
 

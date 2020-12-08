@@ -2,7 +2,6 @@
 0 - 600px: Phone
 600 - 900px:    Tablet Portrait
 900 - 1200px:   Tablet landscape
-600 - 900px:    Tablet Portrait
 (1200 - 1800): This is normal styles desktop first approach
 1800px + :      Big Desktop
 
@@ -143,20 +142,6 @@ body {
   color: transparent;
   transition: all 0.3s;
   letter-spacing: 2px; }
-  @media only screen and (max-width: 56.25em) {
-    .headingSecondary {
-      font-size: 2.5rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .headingSecondary {
-      font-size: 4rem; } }
-  @media only screen and (max-width: 31.25em) {
-    .headingSecondary {
-      letter-spacing: 1rem;
-      font-size: 3.1rem; } }
-  @media only screen and (max-width: 25em) {
-    .headingSecondary {
-      letter-spacing: 1rem;
-      font-size: 2.4rem; } }
 
 .headingTertiary {
   font-size: 1.7rem;
@@ -167,23 +152,11 @@ body {
   font-size: 1.7rem;
   padding: 1rem; }
   .paragraph:not(:last-child) {
-    margin-bottom: 4rem; }
+    margin-bottom: 1rem; }
 
 .headingPrimary__Main__brackets {
   font-size: 5rem;
   line-height: 7rem; }
-  @media only screen and (max-width: 37.5em) {
-    .headingPrimary__Main__brackets {
-      letter-spacing: 1rem;
-      font-size: 5rem; } }
-  @media only screen and (max-width: 31.25em) {
-    .headingPrimary__Main__brackets {
-      letter-spacing: 1rem;
-      font-size: 4rem; } }
-  @media only screen and (max-width: 25em) {
-    .headingPrimary__Main__brackets {
-      letter-spacing: 1rem;
-      font-size: 3rem; } }
 
 .section__title {
   position: absolute;
@@ -384,6 +357,8 @@ body {
       background-color: #4401018e; }
     .card__side-6 {
       background-color: #459a71; }
+    .card__side-7 {
+      background-color: #4401018e; }
   .card:hover .card__side--front {
     transform: rotateX(-180deg); }
   .card:hover .card__side--back {
@@ -479,7 +454,9 @@ body {
         .card__specs-text ul li {
           text-align: center;
           font-size: 2rem;
-          padding: 0.5rem; } }
+          padding: 0.5rem; }
+          .card__specs-text ul li:not(:last-child) {
+            border-bottom: 1px solid #eee; } }
 
 .stories {
   background-color: rgba(255, 255, 255, 0.7);
@@ -510,7 +487,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .stories__shape {
         transform: translateX(-3rem) skewX(0); } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 23.43em) {
       .stories__shape {
         width: 10rem;
         height: 10rem;
@@ -539,7 +516,7 @@ body {
     backface-visibility: hidden;
     transition: all 0.5s;
     backface-visibility: hidden; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 23.43em) {
       .stories__caption {
         font-size: 1.5rem; } }
   .stories:hover .stories__caption {
@@ -587,7 +564,7 @@ body {
       border-bottom: 3px solid green; }
     .form__input:focus:invalid {
       border-bottom: 3px solid red; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 23.43em) {
       .form__input {
         width: 100%; } }
   .form__textarea {
@@ -599,7 +576,7 @@ body {
     color: inherit;
     border-radius: 5px;
     background-color: #e4dfd6; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 23.43em) {
       .form__textarea {
         width: 100%; } }
   .form__label {
@@ -658,7 +635,7 @@ body {
     @media only screen and (max-width: 75em) {
       .popup__content {
         display: block; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 23.43em) {
       .popup__content {
         width: 90%; } }
   .popup__left {
@@ -749,7 +726,7 @@ body {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
+    width: calc((100% - 2rem) / 2); }
   .row .col-1-of-3 {
     width: calc(100% / 3); }
   .row .col-1-of-4 {
@@ -824,7 +801,7 @@ body {
       width: 1;
       top: 2.5rem;
       right: 3rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 23.43em) {
     .navigation__button {
       height: 1;
       width: 1;
@@ -850,7 +827,7 @@ body {
       width: 5;
       top: 3rem;
       right: 3.5rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 23.43em) {
     .navigation__background {
       height: 5;
       width: 5;
@@ -944,12 +921,19 @@ body {
 .section-about {
   padding: 10rem 10rem;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .section-about {
+      padding: 10rem 6rem 10rem 9rem; } }
 
 .section-features {
   margin: 20rem 10rem;
   padding: 20rem 0;
   position: relative;
   background-color: #7cc4a7; }
+  @media only screen and (max-width: 75em) {
+    .section-features {
+      margin: 10rem 10rem 25rem;
+      padding: 15rem 0; } }
   .section-features__row {
     display: flex;
     flex-direction: row;
@@ -978,6 +962,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .contact__form {
         width: 100%; } }
+  @media only screen and (max-width: 75em) {
+    .contact {
+      width: 100%; } }
 
 #section__title-contact {
   position: absolute;
