@@ -18,6 +18,11 @@
         margin-right: 0;
         margin-bottom: $gutter-vertical-small;
       }
+
+      @include respond(mid-phone) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
     }
 
     @include respond(tab-port) {

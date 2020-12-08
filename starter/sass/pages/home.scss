@@ -3,7 +3,7 @@
   position: relative;
 
   @include respond(mid-phone) {
-    padding: 10rem 2rem;
+    padding: 7rem 2rem;
   }
 }
 
@@ -16,6 +16,11 @@
   @include respond(tab-port) {
     margin: 12rem 0;
     padding: 12rem 0;
+  }
+
+  @include respond(mid-phone) {
+    margin: 8rem 0;
+    padding: 7rem 0;
   }
 
   &__row {
@@ -44,6 +49,10 @@
 
   @include respond(mid-phone) {
     margin: 15rem 2rem;
+  }
+
+  @include respond(small-phone) {
+    margin: 15rem 1rem;
   }
 }
 
@@ -78,6 +87,10 @@
     @include respond(mid-phone) {
       padding: 3rem 0 3rem 3rem;
     }
+
+    @include respond(small-phone) {
+      padding: 2rem 1.5rem;
+    }
   }
 
   @include respond(tab-land) {
@@ -96,7 +109,11 @@
   }
   @include respond(mid-phone) {
     left: -3rem;
-    top: -9.5rem;
+    top: -7.5rem;
+  }
+  @include respond(small-phone) {
+    left: -2rem;
+    top: -6.5rem;
   }
 }
 
@@ -108,5 +125,6 @@
 
   @include respond(tab-port) {
     top: 0rem;
+    left: 2rem;
   }
 }

@@ -5,8 +5,11 @@
   text-align: center;
   margin-top: 5rem;
 
+  @include respond(mid-phone) {
+    padding: 3rem 0 0;
+  }
+
   &__logo-box {
-    // margin-bottom: 10rem;
     text-align: center;
 
     span {
@@ -19,6 +22,9 @@
     display: inline-block;
     width: 100vw;
     margin-top: 5rem;
+    @include respond(mid-phone) {
+      margin-top: 1rem;
+    }
   }
 
   &__list {

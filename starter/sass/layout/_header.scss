@@ -24,10 +24,22 @@
     @include respond(mid-phone) {
       padding: 0 6.5rem;
     }
+
+    @include respond(small-phone) {
+      padding: 0 4.5rem;
+    }
   }
 
   &__profileLinks {
     margin-right: 1rem;
     transition: all ease 0.3s;
+
+    @include respond(mid-phone) {
+      margin-right: 0;
+    }
   }
+}
+
+#header_figure {
+  margin-top: 10rem;
 }

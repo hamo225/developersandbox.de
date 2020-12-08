@@ -51,6 +51,10 @@ body {
   @include respond(tab-port) {
     font-size: 6rem;
   }
+
+  @include respond(mid-phone) {
+    font-size: 4rem;
+  }
 }
 
 .headingTertiary {
@@ -88,5 +92,8 @@ body {
   z-index: 1000;
   @include respond(tab-port) {
     top: -7rem;
+  }
+  @include respond(mid-phone) {
+    top: -4.5rem;
   }
 }
