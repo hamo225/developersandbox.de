@@ -32,6 +32,10 @@
 
 .u-margin-top-medium {
   margin-top: 5rem;
+
+  @include respond(mid-phone) {
+    margin-top: 1rem;
+  }
 }
 
 .u-margin-top-big {

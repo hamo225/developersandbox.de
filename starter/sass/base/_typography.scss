@@ -21,6 +21,11 @@ body {
     // animation-delay: 0.3s;
     animation-timing-function: ease-out;
     margin-bottom: 10rem;
+
+    @include respond(mid-phone) {
+      margin-bottom: 0;
+      letter-spacing: 0.3rem;
+    }
   }
 
   &__Sub {
@@ -42,6 +47,10 @@ body {
   color: transparent;
   transition: all 0.3s;
   letter-spacing: 2px;
+
+  @include respond(tab-port) {
+    font-size: 6rem;
+  }
 }
 
 .headingTertiary {
@@ -62,10 +71,22 @@ body {
 .headingPrimary__Main__brackets {
   font-size: 5rem;
   line-height: 7rem;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(mid-phone) {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
 }
 
 .section__title {
   position: absolute;
   top: -9rem;
   z-index: 1000;
+  @include respond(tab-port) {
+    top: -7rem;
+  }
 }

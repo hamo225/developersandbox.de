@@ -59,6 +59,10 @@
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.1em; /* Adjust as needed */
   animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+
+  @include respond(tab-port) {
+    font-size: 6rem;
+  }
 }
 
 /* The typing effect */

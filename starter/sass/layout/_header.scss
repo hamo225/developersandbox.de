@@ -20,6 +20,10 @@
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 0 10rem;
+
+    @include respond(mid-phone) {
+      padding: 0 6.5rem;
+    }
   }
 
   &__profileLinks {

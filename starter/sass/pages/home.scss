@@ -1,6 +1,10 @@
 .section-about {
   padding: 10rem 10rem;
   position: relative;
+
+  @include respond(mid-phone) {
+    padding: 10rem 2rem;
+  }
 }
 
 .section-features {
@@ -9,29 +13,51 @@
   position: relative;
   background-color: #7cc4a7;
 
+  @include respond(tab-port) {
+    margin: 12rem 0;
+    padding: 12rem 0;
+  }
+
   &__row {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     padding: 0 10rem;
+
+    @include respond(tab-port) {
+      padding: 0;
+    }
   }
 }
 
 .section-projects {
   margin: 20rem 10rem;
-  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   padding: 5rem 0;
+
+  @include respond(tab-port) {
+    margin: 20rem 16rem;
+    padding: 3rem 0;
+  }
+
+  @include respond(mid-phone) {
+    margin: 15rem 2rem;
+  }
 }
 
 .section__projects__outline {
-  background-color: #1a1a1a;
+  background-color: #3173ca;
+  position: relative;
 }
 
 .section-contact {
   margin: 0 5rem 20rem;
+
+  @include respond(mid-phone) {
+    margin: 0 2rem 13rem;
+  }
 }
 
 .contact {
@@ -46,6 +72,11 @@
     padding: 10rem 5rem 5rem 12rem;
     @include respond(tab-port) {
       width: 100%;
+      padding: 6rem 0 4rem 6rem;
+    }
+
+    @include respond(mid-phone) {
+      padding: 3rem 0 3rem 3rem;
     }
   }
 
@@ -58,6 +89,15 @@
   position: absolute;
   top: -19rem;
   left: -12rem;
+
+  @include respond(tab-port) {
+    left: -6rem;
+    top: -12.5rem;
+  }
+  @include respond(mid-phone) {
+    left: -3rem;
+    top: -9.5rem;
+  }
 }
 
 .section__title-about {
@@ -65,4 +105,8 @@
   top: -5rem;
   left: 10rem;
   z-index: -10;
+
+  @include respond(tab-port) {
+    top: 0rem;
+  }
 }

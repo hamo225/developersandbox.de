@@ -22,8 +22,8 @@
     }
 
     @include respond(mid-phone) {
-      height: 1;
-      width: 1;
+      height: 5rem;
+      width: 5rem;
       top: 2.5rem;
       right: 3rem;
     }
@@ -53,8 +53,8 @@
     }
 
     @include respond(mid-phone) {
-      height: 5;
-      width: 5;
+      height: 4rem;
+      width: 4rem;
       top: 3rem;
       right: 3.5rem;
     }
@@ -138,6 +138,10 @@
     position: relative;
     top: 3.4rem;
 
+    @include respond(mid-phone) {
+      top: 2.5rem;
+    }
+
     &,
     &::before,
     &::after {
@@ -157,19 +161,18 @@
 
     &::before {
       top: -0.9rem;
+
+      @include respond(mid-phone) {
+        top: -0.7rem;
+      }
     }
 
     &::after {
       top: 0.9rem;
+      @include respond(mid-phone) {
+        top: 0.8rem;
+      }
     }
-  }
-
-  &__button:hover &__icon::before {
-    top: -1.4rem;
-  }
-
-  &__button:hover &__icon::after {
-    top: 1.4rem;
   }
 
   &__checkbox:checked + &__button &__icon {
