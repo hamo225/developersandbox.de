@@ -47,32 +47,6 @@ $breakpoints choices
     opacity: 1;
     transform: translateY(0); } }
 
-.typewriterHeading {
-  display: flex;
-  color: black; }
-
-.typewriter {
-  display: flex;
-  text-transform: uppercase;
-  font-size: 8rem;
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid #fbda52;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.1em;
-  /* Adjust as needed */
-  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite; }
-  @media only screen and (max-width: 56.25em) {
-    .typewriter {
-      font-size: 6rem; } }
-  @media only screen and (max-width: 31.25em) {
-    .typewriter {
-      font-size: 4rem; } }
-
 /* The typing effect */
 @keyframes typing {
   from {
@@ -928,14 +902,11 @@ body {
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80); }
+  transform: scale(100); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%; }
-
-.navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80); }
 
 .navigation__icon {
   position: relative;
@@ -974,6 +945,32 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
+
+.typewriterHeading {
+  display: flex;
+  color: black; }
+
+.typewriter {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 8rem;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #fbda52;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em;
+  /* Adjust as needed */
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+  @media only screen and (max-width: 56.25em) {
+    .typewriter {
+      font-size: 6rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .typewriter {
+      font-size: 4rem; } }
 
 .section-about {
   padding: 10rem 10rem;
