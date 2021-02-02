@@ -338,7 +338,8 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 50rem;
+  margin: 1rem; }
   .card__side {
     height: 50rem;
     transition: all 0.5s ease;
@@ -346,7 +347,6 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 3rem;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
@@ -386,19 +386,88 @@ body {
       .card__picture {
         height: 41%; } }
     .card__picture--1 {
-      background-image: url(/img/Mashalashelter.png); }
+      background-image: url(/img/Mashalashelter.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative; }
     .card__picture--2 {
-      background-image: url(/img/Savelebanesehospitality.png); }
+      background-image: url(/img/Savelebanesehospitality.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%; }
     .card__picture--3 {
-      background-image: url(/img/TheBakeress_1.png); }
+      background-image: url(/img/TheBakeress_1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%; }
     .card__picture--4 {
-      background-image: url(/img/portfolio.png); }
+      background-image: url(/img/portfolio.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%; }
     .card__picture--5 {
-      background-image: url(/img/Real-Estate.png); }
+      background-image: url(/img/Real-Estate.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%; }
     .card__picture--6 {
-      background-image: url(/img/Booking-platform.png); }
+      background-image: url(/img/Booking-platform.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%; }
     .card__picture--7 {
-      background-image: url(/img/dice-game.png); }
+      background-image: url(/img/dice-game.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%; }
+    .card__picture--8 {
+      background-image: url(/img/SeatBookingWidget.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%; }
+    .card__picture--9 {
+      background-image: url(/img/CustomVideoPlayer.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%; }
+    .card__picture--10 {
+      background-image: url(/img/ExchangeRateCalc.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%; }
+    .card__picture--11 {
+      background-image: url(/img/ExpenseTrackerApp.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%; }
+    .card__picture--12 {
+      background-image: url(/img/MealFinderAPI.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%; }
   .card__heading {
     font-size: 2rem;
     font-weight: 400;
@@ -470,6 +539,15 @@ body {
           padding: 0.5rem; }
           .card__specs-text ul li:not(:last-child) {
             border-bottom: 1px solid #eee; } }
+
+.project__skills {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem; }
+
+.project__skills i {
+  font-size: 3rem; }
 
 .stories {
   background-color: rgba(255, 255, 255, 0.7);
@@ -993,7 +1071,7 @@ body {
   background-color: #7cc4a7; }
   @media only screen and (max-width: 56.25em) {
     .section-features {
-      margin: 12rem 0;
+      width: 100vw;
       padding: 12rem 0; } }
   @media only screen and (max-width: 31.25em) {
     .section-features {

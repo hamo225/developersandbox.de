@@ -4,6 +4,7 @@
   -moz-perspective: 150rem;
   position: relative;
   height: 50rem;
+  margin: 1rem;
 
   &__side {
     height: 50rem;
@@ -12,7 +13,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 3rem;
+    // padding: 1.5rem 3rem;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
@@ -77,29 +78,115 @@
 
     &--1 {
       background-image: url(/img/Mashalashelter.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
     }
 
     &--2 {
       background-image: url(/img/Savelebanesehospitality.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%;
     }
 
     &--3 {
       background-image: url(/img/TheBakeress_1.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%;
     }
 
     &--4 {
       background-image: url(/img/portfolio.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%;
     }
 
     &--5 {
       background-image: url(/img/Real-Estate.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%;
     }
     &--6 {
       background-image: url(/img/Booking-platform.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%;
     }
 
     &--7 {
       background-image: url(/img/dice-game.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%;
+    }
+    &--8 {
+      background-image: url(/img/SeatBookingWidget.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%;
+    }
+    &--9 {
+      background-image: url(/img/CustomVideoPlayer.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%;
+    }
+    &--10 {
+      background-image: url(/img/ExchangeRateCalc.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%;
+    }
+    &--11 {
+      background-image: url(/img/ExpenseTrackerApp.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%;
+    }
+    &--12 {
+      background-image: url(/img/MealFinderAPI.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      width: 100%;
     }
   }
 
@@ -241,4 +328,15 @@
       }
     }
   }
+}
+
+.project__skills {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.project__skills i {
+  font-size: 3rem;
 }

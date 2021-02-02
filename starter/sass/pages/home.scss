@@ -42,7 +42,7 @@
   background-color: #7cc4a7;
 
   @include respond(tab-port) {
-    margin: 12rem 0;
+    width: 100vw;
     padding: 12rem 0;
   }
 
