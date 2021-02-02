@@ -9,13 +9,13 @@ body {
 .headingPrimary {
   color: rgb(66, 65, 65);
   text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 1rem;
+  // backface-visibility: hidden;
+  // margin-bottom: 1rem;
 
   &__Main {
     display: block;
     letter-spacing: 1rem;
-    font-weight: 900;
+    // font-weight: 900;
     animation-name: moveInLeft;
     animation-duration: 3s;
     // animation-delay: 0.3s;
@@ -28,14 +28,14 @@ body {
     }
   }
 
-  &__Sub {
-    display: block;
-    font-size: 2rem;
-    letter-spacing: 1.74rem;
-    font-weight: 500;
-    animation: moveInRight 3s;
-    text-transform: lowercase;
-  }
+  // &__Sub {
+  //   display: block;
+  //   font-size: 2rem;
+  //   letter-spacing: 1.74rem;
+  //   font-weight: 500;
+  //   animation: moveInRight 3s;
+  //   text-transform: lowercase;
+  // }
 }
 
 .headingSecondary {
@@ -57,11 +57,11 @@ body {
   }
 }
 
-.headingTertiary {
-  font-size: $default-font-size;
-  font-weight: 700;
-  text-transform: uppercase;
-}
+// .headingTertiary {
+//   font-size: $default-font-size;
+//   font-weight: 700;
+//   text-transform: uppercase;
+// }
 
 .paragraph {
   font-size: $default-font-size;
@@ -81,7 +81,7 @@ body {
   }
 
   @include respond(mid-phone) {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 4rem;
   }
 

@@ -10,6 +10,10 @@
   /* clip-path works its way around from top left to each corner of the image */
   clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 95vh);
 
+  @include respond(mid-phone) {
+    height: 70vh;
+  }
+
   &__textBox {
     position: absolute;
     width: fit-content;
