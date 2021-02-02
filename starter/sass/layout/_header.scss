@@ -1,6 +1,6 @@
 .header {
   /* 95% of the viewport height */
-  height: 95vh;
+  height: 92vh;
   background-color: #fdf0ec;
   z-index: -20;
   /* will always fit the element in whatever the size of the viewport is */
@@ -25,7 +25,7 @@
     text-align: center;
 
     @include respond(mid-phone) {
-      padding: 0 2.5rem;
+      margin-top: 2rem;
     }
 
     @include respond(small-phone) {
