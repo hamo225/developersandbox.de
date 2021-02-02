@@ -11,7 +11,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 95vh);
 
   @include respond(mid-phone) {
-    height: 70vh;
+    height: 60vh;
   }
 
   &__textBox {
@@ -23,14 +23,13 @@
     /* used to center the div in the middle of the page */
     transform: translate(-50%, -50%);
     text-align: center;
-    padding: 0 10rem;
 
     @include respond(mid-phone) {
-      padding: 0 6.5rem;
+      padding: 0 2.5rem;
     }
 
     @include respond(small-phone) {
-      padding: 0 1.3rem;
+      padding: 0 0;
     }
   }
 
@@ -45,5 +44,5 @@
 }
 
 #header_figure {
-  margin-top: 10rem;
+  margin-top: 4rem;
 }

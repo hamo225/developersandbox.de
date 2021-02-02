@@ -20,11 +20,11 @@ body {
     animation-duration: 3s;
     // animation-delay: 0.3s;
     animation-timing-function: ease-out;
-    margin-bottom: 10rem;
 
     @include respond(mid-phone) {
       margin-bottom: 0;
-      letter-spacing: 0.3rem;
+      margin-top: 3rem;
+      letter-spacing: 0.1rem;
     }
   }
 
@@ -53,7 +53,7 @@ body {
   }
 
   @include respond(mid-phone) {
-    font-size: 4rem;
+    font-size: 3.7rem;
   }
 }
 
@@ -81,18 +81,18 @@ body {
   }
 
   @include respond(mid-phone) {
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 1.6rem;
+    line-height: 0;
   }
 
-  @include respond(small-phone) {
-    font-size: 1.5rem;
-  }
+  // @include respond(small-phone) {
+  //   font-size: 1.5rem;
+  // }
 }
 
 .section__title {
   position: absolute;
-  top: -9rem;
+  top: -7rem;
   z-index: 1000;
   @include respond(tab-port) {
     top: -7rem;

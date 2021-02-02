@@ -20,7 +20,7 @@
   }
 
   @include respond(mid-phone) {
-    font-size: 4rem;
+    font-size: 3.7rem;
   }
 }
 
@@ -151,6 +151,11 @@
 
   @include respond(tab-port) {
     top: 0rem;
+    left: 2rem;
+  }
+
+  @include respond(mid-phone) {
+    top: 1rem;
     left: 2rem;
   }
 }

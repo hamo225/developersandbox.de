@@ -100,12 +100,12 @@ body {
     letter-spacing: 1rem;
     animation-name: moveInLeft;
     animation-duration: 3s;
-    animation-timing-function: ease-out;
-    margin-bottom: 10rem; }
+    animation-timing-function: ease-out; }
     @media only screen and (max-width: 31.25em) {
       .headingPrimary__Main {
         margin-bottom: 0;
-        letter-spacing: 0.3rem; } }
+        margin-top: 3rem;
+        letter-spacing: 0.1rem; } }
 
 .headingSecondary {
   font-size: 8rem;
@@ -121,7 +121,7 @@ body {
       font-size: 6rem; } }
   @media only screen and (max-width: 31.25em) {
     .headingSecondary {
-      font-size: 4rem; } }
+      font-size: 3.7rem; } }
 
 .paragraph {
   font-size: 1.7rem;
@@ -137,15 +137,12 @@ body {
       font-size: 3rem; } }
   @media only screen and (max-width: 31.25em) {
     .headingPrimary__Main__brackets {
-      font-size: 2rem;
-      line-height: 4rem; } }
-  @media only screen and (max-width: 24em) {
-    .headingPrimary__Main__brackets {
-      font-size: 1.5rem; } }
+      font-size: 1.6rem;
+      line-height: 0; } }
 
 .section__title {
   position: absolute;
-  top: -9rem;
+  top: -7rem;
   z-index: 1000; }
   @media only screen and (max-width: 56.25em) {
     .section__title {
@@ -692,7 +689,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 95vh); }
   @media only screen and (max-width: 31.25em) {
     .header {
-      height: 70vh; } }
+      height: 60vh; } }
   .header__textBox {
     position: absolute;
     width: fit-content;
@@ -700,14 +697,13 @@ body {
     left: 50%;
     /* used to center the div in the middle of the page */
     transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 0 10rem; }
+    text-align: center; }
     @media only screen and (max-width: 31.25em) {
       .header__textBox {
-        padding: 0 6.5rem; } }
+        padding: 0 2.5rem; } }
     @media only screen and (max-width: 24em) {
       .header__textBox {
-        padding: 0 1.3rem; } }
+        padding: 0 0; } }
   .header__profileLinks {
     margin-right: 1rem;
     transition: all ease 0.3s; }
@@ -716,7 +712,7 @@ body {
         margin-right: 0; } }
 
 #header_figure {
-  margin-top: 10rem; }
+  margin-top: 4rem; }
 
 .row {
   max-width: 150rem;
@@ -961,7 +957,7 @@ body {
       font-size: 6rem; } }
   @media only screen and (max-width: 31.25em) {
     .typewriter {
-      font-size: 4rem; } }
+      font-size: 3.7rem; } }
 
 .section-about {
   padding: 10rem 10rem;
@@ -1066,4 +1062,8 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section__title-about {
       top: 0rem;
+      left: 2rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .section__title-about {
+      top: 1rem;
       left: 2rem; } }
