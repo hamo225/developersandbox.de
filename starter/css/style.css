@@ -143,13 +143,15 @@ body {
 .section__title {
   position: absolute;
   top: -7rem;
+  left: 0;
   z-index: 1000; }
   @media only screen and (max-width: 56.25em) {
     .section__title {
       top: -7rem; } }
   @media only screen and (max-width: 31.25em) {
     .section__title {
-      top: -4.5rem; } }
+      top: -4rem;
+      left: 0; } }
 
 .u-center-text {
   text-align: center; }
@@ -302,19 +304,35 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.7); }
 
-.feature-box {
-  transition: all 0.2s;
-  text-align: center;
-  border-radius: 20px;
-  padding: 1rem;
+.icon__box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  .feature-box img {
-    max-width: 100px; }
-    @media only screen and (max-width: 31.25em) {
-      .feature-box img {
-        max-width: 100%; } }
+  align-items: center;
+  color: rgba(0, 0, 0, 0.713);
+  margin: 2rem; }
+  @media only screen and (max-width: 31.25em) {
+    .icon__box {
+      margin: 1.2rem; } }
+
+.icon__box i {
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.713);
+  margin-bottom: 1rem; }
+  @media only screen and (max-width: 31.25em) {
+    .icon__box i {
+      font-size: 4rem;
+      margin-bottom: 0.5rem; } }
+
+.icon__box p {
+  font-size: 1.5rem; }
+  @media only screen and (max-width: 31.25em) {
+    .icon__box p {
+      font-size: 1.2rem; } }
+
+.icon__box:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease; }
 
 .card {
   perspective: 150rem;
@@ -967,8 +985,10 @@ body {
       padding: 7rem 2rem; } }
 
 .section-features {
-  margin: 20rem 10rem;
-  padding: 20rem 0;
+  padding: 5rem;
+  width: 80vw;
+  margin: 10rem auto;
+  height: fit-content;
   position: relative;
   background-color: #7cc4a7; }
   @media only screen and (max-width: 56.25em) {
@@ -977,17 +997,22 @@ body {
       padding: 12rem 0; } }
   @media only screen and (max-width: 31.25em) {
     .section-features {
-      margin: 8rem 0;
-      padding: 7rem 0; } }
+      width: 100vw;
+      height: fit-content;
+      padding: 2rem 1rem; } }
   .section-features__row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    padding: 0 10rem; }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px; }
     @media only screen and (max-width: 56.25em) {
       .section-features__row {
         padding: 0; } }
+    @media only screen and (max-width: 31.25em) {
+      .section-features__row {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 3px; } }
 
 .section-projects {
   margin: 20rem 10rem;
