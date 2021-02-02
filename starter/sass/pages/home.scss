@@ -41,8 +41,6 @@
   position: relative;
   background-color: #7cc4a7;
 
-  // TODO: CHECK WIDTH AND HEIGHT FOR TABLETS
-
   @include respond(tab-port) {
     margin: 12rem 0;
     padding: 12rem 0;
