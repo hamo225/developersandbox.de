@@ -36,7 +36,7 @@
     }
 
     &-1 {
-      background-color: #98bec8;
+      background-color: #7dd1e6;
     }
     &-2 {
       background-color: #fbda52;
@@ -45,16 +45,31 @@
       background-color: #d3e1e1;
     }
     &-4 {
-      background-color: #22548c;
+      background-color: #fbda52;
     }
     &-5 {
-      background-color: #4401018e;
+      background-color: #f1e5e5;
     }
     &-6 {
-      background-color: #459a71;
+      background-color: #63d69f;
     }
     &-7 {
-      background-color: #4401018e;
+      background-color: #f1e5e5;
+    }
+    &-8 {
+      background-color: #d3e1e1;
+    }
+    &-9 {
+      background-color: #fbda52;
+    }
+    &-10 {
+      background-color: #63d69f;
+    }
+    &-11 {
+      background-color: #7dd1e6;
+    }
+    &-12 {
+      background-color: #f1e5e5;
     }
   }
 
@@ -106,7 +121,7 @@
     }
 
     &--4 {
-      background-image: url(/img/portfolio.png);
+      background-image: url(/img/Portfolio.png);
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
@@ -199,35 +214,35 @@
     margin-bottom: 3rem;
   }
 
-  &__heading-span {
-    padding: 1rem 1.5rem;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
+  // &__heading-span {
+  //   padding: 1rem 1.5rem;
+  //   -webkit-box-decoration-break: clone;
+  //   box-decoration-break: clone;
 
-    &--1 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($secondary-color-light, 0.45),
-        rgba($secondary-color-dark, 0.45)
-      );
-    }
+  //   &--1 {
+  //     background-image: linear-gradient(
+  //       to right bottom,
+  //       rgba($secondary-color-light, 0.45),
+  //       rgba($secondary-color-dark, 0.45)
+  //     );
+  //   }
 
-    &--2 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($secondary-color-light, 0.45),
-        rgba($secondary-color-dark, 0.45)
-      );
-    }
+  //   &--2 {
+  //     background-image: linear-gradient(
+  //       to right bottom,
+  //       rgba($secondary-color-light, 0.45),
+  //       rgba($secondary-color-dark, 0.45)
+  //     );
+  //   }
 
-    &--3 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($secondary-color-light, 0.45),
-        rgba($secondary-color-dark, 0.45)
-      );
-    }
-  }
+  //   &--3 {
+  //     background-image: linear-gradient(
+  //       to right bottom,
+  //       rgba($secondary-color-light, 0.45),
+  //       rgba($secondary-color-dark, 0.45)
+  //     );
+  //   }
+  // }
 
   &__details {
     ul {
