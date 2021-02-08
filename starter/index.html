@@ -1143,23 +1143,23 @@ Having been previously a part of the syndicate himself as once being GM of Linas
             </video>
           </div> -->
           <div class="contact__form">
-            <form action="#" class="form">
+            <form action="formtoemail.php" class="form" method="POST">
 
               <div class="u-margin-bottom-medium section__title " id="section__title-contact">
                 <h2 class="headingSecondary">Contact.</h2>
               </div>
               <div class="form__group">
-                <input type="text" class="form__input" placeholder="Your Full Name" id="name" required>
+                <input type="text" class="form__input" placeholder="Your Full Name" id="name" name="name" required>
                 <label for="name" class="form__label">Your Full Name</label>
               </div>
               <div class="form__group">
-                <input type="email" class="form__input" placeholder="Your Email" id="email" required>
+                <input type="email" class="form__input" placeholder="Your Email" id="email" name="email" required>
                 <label for="email" class="form__label">Enter Your Email</label>
               </div>
 
               <div class="form__group">
                 <div>
-                  <textarea class="form__textarea" name="" id="" cols="45" rows="5" placeholder="Your Message"
+                  <textarea class="form__textarea" name="message" id="" cols="45" rows="5" placeholder="Your Message"
                     required></textarea>
                 </div>
               </div>
