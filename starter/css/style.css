@@ -1251,7 +1251,7 @@ body {
 
 .section__testimonial__title {
   position: absolute;
-  top: -7.3rem;
+  top: -7.1rem;
   left: 0;
   z-index: -10; }
 
@@ -1285,7 +1285,7 @@ body {
 
 #section__title-contact {
   position: absolute;
-  top: -19rem;
+  top: -17.3rem;
   left: -12rem; }
   @media only screen and (max-width: 56.25em) {
     #section__title-contact {
