@@ -937,6 +937,9 @@ body {
 #header_figure {
   margin-top: 4rem; }
 
+#header_figure a:hover {
+  cursor: pointer; }
+
 .row {
   max-width: 150rem;
   margin: 0 auto; }
@@ -1310,3 +1313,6 @@ body {
     .section__title-about {
       top: 1rem;
       left: 2rem; } }
+
+a:hover {
+  cursor: pointer; }
