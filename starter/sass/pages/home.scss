@@ -103,16 +103,15 @@
 
 .section-testimonials {
   position: relative;
-  background-color: #7cc4a7;
-  width: 80vw;
-  height: 45vh;
-  margin: 0 auto 30rem;
+  width: 100vw;
+  height: 60vh;
+  margin: 26rem auto 25rem;
 }
 
 .section__testimonial__title {
   position: absolute;
   top: -7.1rem;
-  left: 0;
+  left: 1rem;
   z-index: -10;
 }
 
@@ -127,16 +126,22 @@
 .contact {
   width: 90%;
   background-size: cover;
+  background-color: rgb(245, 217, 125);
 
   box-shadow: $default-box-shadow-darker;
   position: relative;
   margin: 0 auto;
 
+  @include respond(phone) {
+    box-shadow: none;
+    background-color: rgb(245, 217, 125);
+  }
+
   &__form {
     padding: 10rem 5rem 5rem 12rem;
     @include respond(tab-port) {
       width: 100%;
-      padding: 6rem 0 4rem 6rem;
+      padding: 6rem 0 4rem 4rem;
     }
 
     @include respond(mid-phone) {

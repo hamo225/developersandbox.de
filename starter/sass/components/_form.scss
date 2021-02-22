@@ -9,7 +9,7 @@
     font-size: 1.5rem;
     padding: 1.5rem 2rem;
     color: inherit;
-    background-color: rgb(228, 223, 214);
+    background-color: white;
     border: none;
     border-bottom: 3px solid transparent;
     width: 90%;
@@ -40,7 +40,7 @@
     padding: 1.5rem 2rem;
     color: inherit;
     border-radius: 5px;
-    background-color: rgb(228, 223, 214);
+    background-color: white;
 
     @include respond(small-phone) {
       width: 100%;

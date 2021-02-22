@@ -666,7 +666,7 @@ body {
     font-size: 1.5rem;
     padding: 1.5rem 2rem;
     color: inherit;
-    background-color: #e4dfd6;
+    background-color: white;
     border: none;
     border-bottom: 3px solid transparent;
     width: 90%;
@@ -690,7 +690,7 @@ body {
     padding: 1.5rem 2rem;
     color: inherit;
     border-radius: 5px;
-    background-color: #e4dfd6; }
+    background-color: white; }
     @media only screen and (max-width: 24em) {
       .form__textarea {
         width: 100%; } }
@@ -813,9 +813,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5d97d;
+  background-color: white;
   /* THIS creates the animation! */
-  transition: transform 1s; }
+  transition: transform 1s;
+  background-color: rgba(128, 128, 128, 0.582); }
 
 .slide > img {
   /* Only for images that have different size than slide */
@@ -828,7 +829,7 @@ body {
   top: 50%;
   z-index: 10;
   border: none;
-  background: rgba(255, 255, 255, 0.7);
+  background: white;
   font-family: inherit;
   color: #333;
   border-radius: 50%;
@@ -854,7 +855,7 @@ body {
 
 .dots__dot {
   border: none;
-  background-color: #b9b9b9;
+  background-color: white;
   opacity: 0.7;
   height: 1rem;
   width: 1rem;
@@ -936,6 +937,29 @@ body {
     font-size: 1.3rem; }
   .testimonial__name {
     font-size: 1.4rem; }
+  .dots {
+    bottom: 24%; }
+  .testimonial::before {
+    font-size: 8rem;
+    top: -3.7rem;
+    left: -4.8rem; } }
+
+@media only screen and (max-width: 600px) {
+  .testimonial__text {
+    font-size: 1.1rem; }
+  .testimonial::before {
+    font-size: 7rem;
+    top: -2.7rem;
+    left: -3.8rem; }
+  .slide {
+    height: 46vh; }
+  .slider__btn {
+    height: 4rem;
+    width: 4rem; }
+  .testimonial__location {
+    font-size: 1.1rem; }
+  .testimonial__name {
+    font-size: 1.1rem; }
   .dots {
     bottom: 24%; } }
 
@@ -1284,15 +1308,14 @@ body {
 
 .section-testimonials {
   position: relative;
-  background-color: #7cc4a7;
-  width: 80vw;
-  height: 45vh;
-  margin: 0 auto 30rem; }
+  width: 100vw;
+  height: 60vh;
+  margin: 26rem auto 25rem; }
 
 .section__testimonial__title {
   position: absolute;
   top: -7.1rem;
-  left: 0;
+  left: 1rem;
   z-index: -10; }
 
 .section-contact {
@@ -1304,15 +1327,20 @@ body {
 .contact {
   width: 90%;
   background-size: cover;
+  background-color: #f5d97d;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
   position: relative;
   margin: 0 auto; }
+  @media only screen and (max-width: 37.5em) {
+    .contact {
+      box-shadow: none;
+      background-color: #f5d97d; } }
   .contact__form {
     padding: 10rem 5rem 5rem 12rem; }
     @media only screen and (max-width: 56.25em) {
       .contact__form {
         width: 100%;
-        padding: 6rem 0 4rem 6rem; } }
+        padding: 6rem 0 4rem 4rem; } }
     @media only screen and (max-width: 31.25em) {
       .contact__form {
         padding: 3rem 0 3rem 3rem; } }

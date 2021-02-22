@@ -17,9 +17,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(245, 217, 125);
+  background-color: white;
   /* THIS creates the animation! */
   transition: transform 1s;
+  background-color: rgba(128, 128, 128, 0.582);
 }
 
 .slide > img {
@@ -35,7 +36,7 @@
   z-index: 10;
 
   border: none;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgb(255, 255, 255);
   font-family: inherit;
   color: #333;
   border-radius: 50%;
@@ -65,7 +66,7 @@
 
 .dots__dot {
   border: none;
-  background-color: #b9b9b9;
+  background-color: white;
   opacity: 0.7;
   height: 1rem;
   width: 1rem;
@@ -170,6 +171,45 @@
 
   .testimonial__name {
     font-size: 1.4rem;
+  }
+
+  .dots {
+    bottom: 24%;
+  }
+
+  .testimonial::before {
+    font-size: 8rem;
+    top: -3.7rem;
+    left: -4.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .testimonial__text {
+    font-size: 1.1rem;
+  }
+
+  .testimonial::before {
+    font-size: 7rem;
+    top: -2.7rem;
+    left: -3.8rem;
+  }
+
+  .slide {
+    height: 46vh;
+  }
+
+  .slider__btn {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .testimonial__location {
+    font-size: 1.1rem;
+  }
+
+  .testimonial__name {
+    font-size: 1.1rem;
   }
 
   .dots {
