@@ -356,33 +356,35 @@ body {
     .card__side--back {
       transform: rotateX(180deg); }
       .card__side--back--1 {
-        background-color: #fdf0ec; }
+        background-color: #c1dcff; }
       .card__side--back--2 {
-        background-color: #fdf0ec; }
+        background-color: #c1dcff; }
     .card__side-1 {
-      background-color: #7dd1e6; }
+      background-color: #d3e1e1; }
     .card__side-2 {
-      background-color: #fbda52; }
+      background-color: #d3e1e1; }
     .card__side-3 {
       background-color: #d3e1e1; }
     .card__side-4 {
-      background-color: #fbda52; }
+      background-color: #d3e1e1; }
     .card__side-5 {
-      background-color: #f1e5e5; }
+      background-color: #d3e1e1; }
     .card__side-6 {
-      background-color: #63d69f; }
+      background-color: #d3e1e1; }
     .card__side-7 {
-      background-color: #f1e5e5; }
+      background-color: #d3e1e1; }
     .card__side-8 {
       background-color: #d3e1e1; }
     .card__side-9 {
-      background-color: #fbda52; }
+      background-color: #d3e1e1; }
     .card__side-10 {
-      background-color: #63d69f; }
+      background-color: #d3e1e1; }
     .card__side-11 {
-      background-color: #7dd1e6; }
+      background-color: #d3e1e1; }
     .card__side-12 {
-      background-color: #f1e5e5; }
+      background-color: #d3e1e1; }
+    .card__side-13 {
+      background-color: #d3e1e1; }
   .card:hover .card__side--front {
     transform: rotateX(-180deg); }
   .card:hover .card__side--back {
@@ -393,88 +395,95 @@ body {
     width: 100%; }
     @media only screen and (max-width: 31.25em) {
       .card__picture {
-        height: 41%; } }
+        height: 26%; } }
     .card__picture--1 {
       background-image: url(/img/Mashalashelter.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative; }
     .card__picture--2 {
       background-image: url(/img/Savelebanesehospitality.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%; }
     .card__picture--3 {
       background-image: url(/img/TheBakeress_1.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%; }
     .card__picture--4 {
       background-image: url(/img/Portfolio.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%; }
     .card__picture--5 {
       background-image: url(/img/Real-Estate.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%; }
     .card__picture--6 {
       background-image: url(/img/Booking-platform.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%; }
     .card__picture--7 {
       background-image: url(/img/dice-game.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%; }
     .card__picture--8 {
       background-image: url(/img/SeatBookingWidget.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%; }
     .card__picture--9 {
       background-image: url(/img/CustomVideoPlayer.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%; }
     .card__picture--10 {
       background-image: url(/img/ExchangeRateCalc.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%; }
     .card__picture--11 {
       background-image: url(/img/ExpenseTrackerApp.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%; }
     .card__picture--12 {
       background-image: url(/img/MealFinderAPI.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
+      position: relative;
+      width: 100%; }
+    .card__picture--13 {
+      background-image: url(/img/cOACHING.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
       position: relative;
       width: 100%; }
   .card__heading {
@@ -510,14 +519,12 @@ body {
     .card__specs-text ul li {
       font-size: 1.7rem;
       padding: 0.5rem; }
-      .card__specs-text ul li:not(:last-child) {
-        border-bottom: 1px solid #eee; }
   @media only screen and (max-width: 56.25em) {
     .card {
       height: auto;
       margin-bottom: 5rem; }
       .card__side {
-        height: 50rem;
+        height: 100vh;
         position: relative;
         box-shadow: none; }
         .card__side--back {
@@ -531,13 +538,15 @@ body {
         padding: 5rem; }
       .card__specs-text ul {
         list-style: none;
-        width: 100%; }
+        width: 100%;
+        font-size: 1.8rem; }
         .card__specs-text ul li {
           text-align: center;
-          font-size: 2rem;
-          padding: 0.5rem; }
-          .card__specs-text ul li:not(:last-child) {
-            border-bottom: 1px solid #eee; } }
+          font-size: 1.7rem;
+          padding: 0.5rem; } }
+
+.card__side--front .card__specs-box {
+  display: none; }
 
 .project__skills {
   display: flex;
@@ -547,6 +556,22 @@ body {
 
 .project__skills i {
   font-size: 3rem; }
+
+@media only screen and (max-width: 800px) {
+  .card__side--back {
+    display: none; }
+  .card__side--front .card__specs-box {
+    display: block; }
+  .section-projects {
+    margin: 20rem 4rem; }
+  .card__specs-box .button-small-section {
+    margin-top: 2rem; }
+  .card__specs-box .button-small-section:nth-child(1) {
+    margin-top: 0; } }
+
+@media only screen and (max-width: 31.25em) {
+  .card__heading {
+    margin: 5rem 1rem 4rem; } }
 
 .stories {
   background-color: rgba(255, 255, 255, 0.7);
@@ -899,6 +924,21 @@ body {
 .section__title--testimonials {
   margin-bottom: 4rem; }
 
+@media only screen and (max-width: 800px) {
+  .testimonial__text {
+    font-size: 1.4rem; }
+  .slide {
+    height: 46vh; }
+  .slider__btn {
+    height: 4rem;
+    width: 4rem; }
+  .testimonial__location {
+    font-size: 1.3rem; }
+  .testimonial__name {
+    font-size: 1.4rem; }
+  .dots {
+    bottom: 24%; } }
+
 .header {
   /* 95% of the viewport height */
   height: 92vh;
@@ -952,7 +992,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .row [class^="col-"]:not(:last-child) {
         margin-right: 0;
-        margin-bottom: 6rem; } }
+        margin-bottom: 0; } }
     @media only screen and (max-width: 31.25em) {
       .row [class^="col-"]:not(:last-child) {
         margin-right: 0;
@@ -1229,7 +1269,7 @@ body {
   padding: 5rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-projects {
-      margin: 20rem 16rem;
+      margin: 20rem 4rem;
       padding: 3rem 0; } }
   @media only screen and (max-width: 31.25em) {
     .section-projects {

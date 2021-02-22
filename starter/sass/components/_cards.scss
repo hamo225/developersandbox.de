@@ -27,49 +27,52 @@
       transform: rotateX(180deg);
 
       &--1 {
-        background-color: #fdf0ec;
+        background-color: #c1dcff;
       }
 
       &--2 {
-        background-color: #fdf0ec;
+        background-color: #c1dcff;
       }
     }
 
     &-1 {
-      background-color: #7dd1e6;
+      background-color: #d3e1e1;
     }
     &-2 {
-      background-color: #fbda52;
+      background-color: #d3e1e1;
     }
     &-3 {
       background-color: #d3e1e1;
     }
     &-4 {
-      background-color: #fbda52;
+      background-color: #d3e1e1;
     }
     &-5 {
-      background-color: #f1e5e5;
+      background-color: #d3e1e1;
     }
     &-6 {
-      background-color: #63d69f;
+      background-color: #d3e1e1;
     }
     &-7 {
-      background-color: #f1e5e5;
+      background-color: #d3e1e1;
     }
     &-8 {
       background-color: #d3e1e1;
     }
     &-9 {
-      background-color: #fbda52;
+      background-color: #d3e1e1;
     }
     &-10 {
-      background-color: #63d69f;
+      background-color: #d3e1e1;
     }
     &-11 {
-      background-color: #7dd1e6;
+      background-color: #d3e1e1;
     }
     &-12 {
-      background-color: #f1e5e5;
+      background-color: #d3e1e1;
+    }
+    &-13 {
+      background-color: #d3e1e1;
     }
   }
 
@@ -88,7 +91,7 @@
     width: 100%;
 
     @include respond(mid-phone) {
-      height: 41%;
+      height: 26%;
     }
 
     &--1 {
@@ -96,7 +99,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
     }
 
@@ -105,7 +108,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%;
     }
@@ -115,7 +118,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%;
     }
@@ -125,7 +128,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%;
     }
@@ -135,7 +138,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%;
     }
@@ -144,7 +147,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%;
     }
@@ -154,7 +157,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%;
     }
@@ -163,7 +166,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%;
     }
@@ -172,7 +175,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%;
     }
@@ -181,7 +184,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%;
     }
@@ -190,7 +193,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       width: 100%;
     }
@@ -199,7 +202,16 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
+      position: relative;
+      width: 100%;
+    }
+    &--13 {
+      background-image: url(/img/cOACHING.png);
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center;
+      background-size: contain;
       position: relative;
       width: 100%;
     }
@@ -213,36 +225,6 @@
     text-align: center;
     margin-bottom: 3rem;
   }
-
-  // &__heading-span {
-  //   padding: 1rem 1.5rem;
-  //   -webkit-box-decoration-break: clone;
-  //   box-decoration-break: clone;
-
-  //   &--1 {
-  //     background-image: linear-gradient(
-  //       to right bottom,
-  //       rgba($secondary-color-light, 0.45),
-  //       rgba($secondary-color-dark, 0.45)
-  //     );
-  //   }
-
-  //   &--2 {
-  //     background-image: linear-gradient(
-  //       to right bottom,
-  //       rgba($secondary-color-light, 0.45),
-  //       rgba($secondary-color-dark, 0.45)
-  //     );
-  //   }
-
-  //   &--3 {
-  //     background-image: linear-gradient(
-  //       to right bottom,
-  //       rgba($secondary-color-light, 0.45),
-  //       rgba($secondary-color-dark, 0.45)
-  //     );
-  //   }
-  // }
 
   &__details {
     ul {
@@ -286,10 +268,6 @@
         // text-align: center;
         font-size: 1.7rem;
         padding: 0.5rem;
-
-        &:not(:last-child) {
-          border-bottom: 1px solid $color-grey-light-2;
-        }
       }
     }
   }
@@ -301,7 +279,7 @@
     // box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &__side {
-      height: 50rem;
+      height: 100vh;
       position: relative;
       // border-radius: 1rem;
       box-shadow: none;
@@ -330,19 +308,19 @@
       ul {
         list-style: none;
         width: 100%;
+        font-size: 1.8rem;
 
         li {
           text-align: center;
-          font-size: 2rem;
+          font-size: 1.7rem;
           padding: 0.5rem;
-
-          &:not(:last-child) {
-            border-bottom: 1px solid $color-grey-light-2;
-          }
         }
       }
     }
   }
+}
+.card__side--front .card__specs-box {
+  display: none;
 }
 
 .project__skills {
@@ -354,4 +332,32 @@
 
 .project__skills i {
   font-size: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .card__side--back {
+    display: none;
+  }
+
+  .card__side--front .card__specs-box {
+    display: block;
+  }
+
+  .section-projects {
+    margin: 20rem 4rem;
+  }
+
+  .card__specs-box .button-small-section {
+    margin-top: 2rem;
+  }
+
+  .card__specs-box .button-small-section:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+@include respond(mid-phone) {
+  .card__heading {
+    margin: 5rem 1rem 4rem;
+  }
 }
