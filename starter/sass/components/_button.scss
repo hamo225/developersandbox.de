@@ -94,3 +94,9 @@
     color: $color-white;
   }
 }
+
+@include respond(small-phone) {
+  .button--form {
+    width: 100%;
+  }
+}

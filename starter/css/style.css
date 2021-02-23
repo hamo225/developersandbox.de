@@ -1,4 +1,5 @@
 /* Media Query Manager
+
 0 - 600px: Phone
 600 - 900px:    Tablet Portrait
 900 - 1200px:   Tablet landscape
@@ -257,6 +258,14 @@ body {
 
 .button-small-section a:hover {
   color: #fff; }
+
+@media only screen and (max-width: 24em) {
+  .button--form {
+    width: 100%; } }
+
+@media only screen and (max-width: 24em) {
+  .button--form {
+    width: 100%; } }
 
 .composition {
   position: relative;
@@ -585,40 +594,6 @@ body {
   .card__side-11,
   .card__side-12,
   .card__side-10 {
-    height: 65vh; }
-  .card__picture--1 {
-    background-position: bottom; }
-  .card__picture--2,
-  .card__picture--3,
-  .card__picture--13,
-  .card__picture--4,
-  .card__picture--5,
-  .card__picture--7,
-  .card__picture--8,
-  .card__picture--9,
-  .card__picture--11 {
-    background-position: initial; }
-  .card__side-3,
-  .card__side-13,
-  .card__side-4,
-  .card__side-5,
-  .card__side-9 {
-    height: 57vh; }
-  .card__side-8 {
-    height: 70vh; } }
-
-@media only screen and (max-width: 31.25em) {
-  .card__heading {
-    margin: 1rem 1rem 3rem; }
-  .card__specs-text h3 {
-    font-size: 1.7rem;
-    text-decoration: underline; }
-  .card__side-1,
-  .card__side-2,
-  .card__side-6,
-  .card__side-7,
-  .card__side-11,
-  .card__side-12 {
     height: 61vh; }
   .card__picture--1 {
     background-position: bottom; }
@@ -643,6 +618,76 @@ body {
     height: 70vh; }
   .card__side-10 {
     height: 65vh; } }
+
+@media only screen and (max-width: 24em) {
+  .card__heading {
+    margin: 1rem 1rem 3rem; }
+  .card__specs-text h3 {
+    font-size: 1.7rem;
+    text-decoration: underline; }
+  .card__side-1,
+  .card__side-2,
+  .card__side-6,
+  .card__side-7,
+  .card__side-11,
+  .card__side-12 {
+    height: 68vh; }
+  .card__picture--1 {
+    background-position: bottom; }
+  .card__picture--2,
+  .card__picture--3,
+  .card__picture--13,
+  .card__picture--4,
+  .card__picture--5,
+  .card__picture--7,
+  .card__picture--8,
+  .card__picture--9,
+  .card__picture--11 {
+    background-position: initial; }
+  .card__side-3,
+  .card__side-13,
+  .card__side-4,
+  .card__side-5,
+  .card__side-9 {
+    height: 61vh; }
+  .card__side-10,
+  .card__side-8 {
+    height: 72vh; } }
+
+@media only screen and (max-width: 24em) {
+  .card__heading {
+    margin: 1rem 1rem 3rem; }
+  .card__specs-text h3 {
+    font-size: 1.7rem;
+    text-decoration: underline; }
+  .card__side-1,
+  .card__side-2,
+  .card__side-6,
+  .card__side-7,
+  .card__side-11,
+  .card__side-12 {
+    height: 68vh; }
+  .card__picture--1 {
+    background-position: bottom; }
+  .card__picture--2,
+  .card__picture--3,
+  .card__picture--13,
+  .card__picture--4,
+  .card__picture--5,
+  .card__picture--7,
+  .card__picture--8,
+  .card__picture--9,
+  .card__picture--11 {
+    background-position: initial; }
+  .card__side-3,
+  .card__side-13,
+  .card__side-4,
+  .card__side-5,
+  .card__side-9 {
+    height: 61vh; }
+  .card__side-10,
+  .card__side-8 {
+    height: 72vh; } }
 
 .stories {
   background-color: rgba(255, 255, 255, 0.7);
@@ -678,6 +723,11 @@ body {
         width: 10rem;
         height: 10rem;
         transform: translateX(-1rem) skewX(0); } }
+    @media only screen and (max-width: 24em) {
+      .stories__shape {
+        width: 10rem;
+        height: 10rem;
+        transform: translateX(-1rem) skewX(0); } }
   .stories__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.5);
@@ -702,6 +752,9 @@ body {
     backface-visibility: hidden;
     transition: all 0.5s;
     backface-visibility: hidden; }
+    @media only screen and (max-width: 24em) {
+      .stories__caption {
+        font-size: 1.5rem; } }
     @media only screen and (max-width: 24em) {
       .stories__caption {
         font-size: 1.5rem; } }
@@ -753,6 +806,9 @@ body {
     @media only screen and (max-width: 24em) {
       .form__input {
         width: 100%; } }
+    @media only screen and (max-width: 24em) {
+      .form__input {
+        width: 100%; } }
   .form__textarea {
     border: none;
     width: 90%;
@@ -762,6 +818,9 @@ body {
     color: inherit;
     border-radius: 5px;
     background-color: white; }
+    @media only screen and (max-width: 24em) {
+      .form__textarea {
+        width: 100%; } }
     @media only screen and (max-width: 24em) {
       .form__textarea {
         width: 100%; } }
@@ -821,6 +880,9 @@ body {
     @media only screen and (max-width: 75em) {
       .popup__content {
         display: block; } }
+    @media only screen and (max-width: 24em) {
+      .popup__content {
+        width: 90%; } }
     @media only screen and (max-width: 24em) {
       .popup__content {
         width: 90%; } }
@@ -1066,6 +1128,9 @@ body {
     @media only screen and (max-width: 24em) {
       .header__textBox {
         padding: 0 0; } }
+    @media only screen and (max-width: 24em) {
+      .header__textBox {
+        padding: 0 0; } }
   .header__profileLinks {
     margin-right: 1rem;
     transition: all ease 0.3s; }
@@ -1187,6 +1252,12 @@ body {
       width: 1;
       top: 2.5rem;
       right: 2.5rem; } }
+  @media only screen and (max-width: 24em) {
+    .navigation__button {
+      height: 1;
+      width: 1;
+      top: 2.5rem;
+      right: 2.5rem; } }
 
 .navigation__background {
   height: 5rem;
@@ -1207,6 +1278,12 @@ body {
       width: 4rem;
       top: 3rem;
       right: 3.5rem; } }
+  @media only screen and (max-width: 24em) {
+    .navigation__background {
+      height: 5;
+      width: 5;
+      top: 3rem;
+      right: 3rem; } }
   @media only screen and (max-width: 24em) {
     .navigation__background {
       height: 5;
@@ -1376,6 +1453,9 @@ body {
   @media only screen and (max-width: 24em) {
     .section-projects {
       margin: 15rem 1rem; } }
+  @media only screen and (max-width: 24em) {
+    .section-projects {
+      margin: 15rem 1rem; } }
 
 .section__projects__outline {
   background-color: #3173ca;
@@ -1422,6 +1502,9 @@ body {
     @media only screen and (max-width: 24em) {
       .contact__form {
         padding: 2rem 1.5rem; } }
+    @media only screen and (max-width: 24em) {
+      .contact__form {
+        padding: 2rem 1.5rem; } }
   @media only screen and (max-width: 75em) {
     .contact {
       width: 100%; } }
@@ -1438,6 +1521,10 @@ body {
     #section__title-contact {
       left: -3rem;
       top: -7.5rem; } }
+  @media only screen and (max-width: 24em) {
+    #section__title-contact {
+      left: -2rem;
+      top: -6.5rem; } }
   @media only screen and (max-width: 24em) {
     #section__title-contact {
       left: -2rem;
