@@ -99,8 +99,9 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
+      width: 100%;
     }
 
     &--2 {
@@ -108,7 +109,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
       width: 100%;
     }
@@ -118,7 +119,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
       width: 100%;
     }
@@ -128,7 +129,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
       width: 100%;
     }
@@ -138,7 +139,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
       width: 100%;
     }
@@ -147,7 +148,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
       width: 100%;
     }
@@ -157,7 +158,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
       width: 100%;
     }
@@ -166,7 +167,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
       width: 100%;
     }
@@ -175,7 +176,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
       width: 100%;
     }
@@ -184,7 +185,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
       width: 100%;
     }
@@ -193,7 +194,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
       width: 100%;
     }
@@ -202,7 +203,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
       width: 100%;
     }
@@ -211,7 +212,7 @@
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       position: relative;
       width: 100%;
     }
@@ -358,6 +359,104 @@
 
 @include respond(mid-phone) {
   .card__heading {
-    margin: 5rem 1rem 4rem;
+    margin: 1rem 1rem 3rem;
+  }
+
+  .card__specs-text h3 {
+    font-size: 1.7rem;
+    text-decoration: underline;
+  }
+
+  .card__side-1,
+  .card__side-2,
+  .card__side-6,
+  .card__side-7,
+  .card__side-11,
+  .card__side-12,
+  .card__side-10 {
+    height: 65vh;
+  }
+
+  .card__picture--1 {
+    background-position: bottom;
+  }
+
+  .card__picture--2,
+  .card__picture--3,
+  .card__picture--13,
+  .card__picture--4,
+  .card__picture--5,
+  .card__picture--7,
+  .card__picture--8,
+  .card__picture--9,
+  .card__picture--11 {
+    background-position: initial;
+  }
+
+  .card__side-3,
+  .card__side-13,
+  .card__side-4,
+  .card__side-5,
+  .card__side-9 {
+    height: 57vh;
+  }
+
+  .card__side-8 {
+    height: 70vh;
+  }
+}
+
+@include respond(mid-phone) {
+  .card__heading {
+    margin: 1rem 1rem 3rem;
+  }
+
+  .card__specs-text h3 {
+    font-size: 1.7rem;
+    text-decoration: underline;
+  }
+
+  .card__side-1,
+  .card__side-2,
+  .card__side-6,
+  .card__side-7,
+  .card__side-11,
+  .card__side-12 {
+    height: 61vh;
+  }
+
+  .card__picture--1 {
+    background-position: bottom;
+  }
+
+  .card__picture--2,
+  .card__picture--3,
+  .card__picture--13,
+  .card__picture--4,
+  .card__picture--5,
+  .card__picture--7,
+  .card__picture--8,
+  .card__picture--9,
+  .card__picture--11 {
+    background-position: initial;
+  }
+
+  .card__side-3,
+  .card__side-13 {
+    height: 57vh;
+  }
+
+  .card__side-4,
+  .card__side-5,
+  .card__side-9 {
+    height: 55vh;
+  }
+
+  .card__side-8 {
+    height: 70vh;
+  }
+
+  .card__side-10 {
+    height: 65vh;
   }
 }

@@ -105,7 +105,7 @@
   position: relative;
   width: 100vw;
   height: 60vh;
-  margin: 26rem auto 25rem;
+  margin: 17rem auto 17rem;
 }
 
 .section__testimonial__title {
@@ -196,4 +196,20 @@
 
 a:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-testimonials {
+    position: relative;
+    width: 100vw;
+    height: 35vh;
+    margin: 18rem auto 14rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section__testimonial__title {
+    top: -4.3rem;
+    left: 0;
+  }
 }
