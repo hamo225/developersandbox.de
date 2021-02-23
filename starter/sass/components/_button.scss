@@ -58,7 +58,7 @@
     padding: 1rem;
     background-color: #7cc4a7;
     border-radius: 5px;
-    width: 90%;
+    width: 20%;
     color: white;
   }
 }
@@ -92,11 +92,5 @@
 .button-small-section {
   & a:hover {
     color: $color-white;
-  }
-}
-
-@include respond(small-phone) {
-  .button--form {
-    width: 100%;
   }
 }

@@ -234,7 +234,7 @@ body {
   padding: 1rem;
   background-color: #7cc4a7;
   border-radius: 5px;
-  width: 90%;
+  width: 20%;
   color: white; }
 
 /* Pseudo classes and elements */
@@ -258,14 +258,6 @@ body {
 
 .button-small-section a:hover {
   color: #fff; }
-
-@media only screen and (max-width: 24em) {
-  .button--form {
-    width: 100%; } }
-
-@media only screen and (max-width: 24em) {
-  .button--form {
-    width: 100%; } }
 
 .composition {
   position: relative;
